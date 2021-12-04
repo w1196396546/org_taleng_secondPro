@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="org_taleng_secondPro:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="org_taleng_secondPro/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="org_taleng_secondPro" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
