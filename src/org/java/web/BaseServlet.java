@@ -10,6 +10,8 @@ import java.lang.reflect.Method;
 
 public class BaseServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+            response.setCharacterEncoding("utf-8");
+            response.setContentType("text/html;charset=utf-8");
             request.setCharacterEncoding("utf-8");
             Class clazz = this.getClass();
         try {

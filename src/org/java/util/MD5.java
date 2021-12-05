@@ -1,5 +1,6 @@
 package org.java.util;
 
+import org.junit.Test;
 import sun.misc.BASE64Encoder;
 
 import java.security.MessageDigest;
@@ -7,13 +8,15 @@ import java.security.NoSuchAlgorithmException;
 
 public class MD5 {
 
+    @Test
     public static String MD5Email(String userEmail){
-        byte[] bytes = userEmail.getBytes();
+        byte[] bytes = "1196396546@qq.com".getBytes();
         try {
             MessageDigest md5=MessageDigest.getInstance("MD5");
             byte[] digest = md5.digest(bytes);
             BASE64Encoder coder=new BASE64Encoder();
             String email = coder.encode(digest);
+            System.out.println(email);
             return email;
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
