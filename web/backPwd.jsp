@@ -155,7 +155,6 @@
             alert(flag)
             if (flag==true){
                 var obj=$("#find");
-                alert(1)
                 $.ajax({
                     url:"user",
                     type:"get",
@@ -166,7 +165,7 @@
                         if(data=="true"){
                             $("#find").addClass(" layui-btn-disabled");
                             $('#find').attr('disabled',"true");
-                            settime(obj);
+                            settime();
                             $("#msg").text(data);
                         }else{
                             layer.msg(data);
@@ -181,16 +180,19 @@
 
         })
         var countdown=60;
-        function settime(obj) {
+        function settime() {
+            var obj=$("#find");
             if (countdown == 0) {
-                obj.removeAttribute("disabled");
-                obj.classList.remove("layui-btn-disabled")
-                obj.value="获取验证码";
+                obj.removeAttr("disabled");
+                // obj.classList.remove("layui-btn-disabled")
+                obj.removeClass("layui-btn-disabled");
+                // obj.value="获取验证码";
+                obj.attr("value","获取验证码");
                 countdown = 60;
                 return;
             } else {
-
-                obj.value="重新发送(" + countdown + ")";
+                // obj.value="重新发送(" + countdown + ")";
+                obj.attr("value",countdown+"秒"+"重新发送!");
                 countdown--;
             }
             setTimeout(function() {
