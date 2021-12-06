@@ -41,8 +41,29 @@
         <!--指定数据从哪里来-->
         <property name="dataSource" ref="dataSource"/>
     </bean>
-    <!--启用事务注解，并且事务管理器
-        transaction-Manager:指定事务管理器
+    <!--配置事务通知属性
     -->
-    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <!--配置事务通知属性
+        tx:method:指定什么方法
+        name:什么方法
+        propagation:做什么操作
+        -->
+        <tx:attributes>
+            <tx:method name="add*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="del*" propagation="REQUIRED"/>
+            <tx:method name="*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--配置aop切面-->
+    <aop:config>
+        <!--配置切面执行的条件，在哪个包下面运行，就开始执行-->
+        <aop:pointcut id="beanName" expression="execution(* org.java.service.*.*(..))"/>
+        <!--如果我们的切面触发，要调用哪一个通知运行
+        pointcut-ref：表示哪个切入点切入
+        advice-ref：条件满足，吊桶哪个通知执行
+        -->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="beanName"/>
+    </aop:config>
 </beans>    

@@ -2,13 +2,13 @@ package org.java.entity;
 
 import java.io.Serializable;
 
-public class UserInfo  implements Serializable {
-
+public class UserInfo implements Serializable {
     private String userId;
 
     private String userEmail;
 
     private String userPwd;
+
 
     public String getUserId() {
         return userId;

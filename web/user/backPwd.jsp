@@ -65,7 +65,7 @@
     <div class="login-bg">
         <div class="login-cont w1200">
             <div class="form-box">
-                <form class="layui-form" action="">
+                <form class="layui-form" action="../user?method=checkIdentity" method="post">
                     <legend>找回密码</legend>
                     <div class="layui-form-item">
                         <div class="layui-inline iphone">
@@ -80,7 +80,7 @@
                                 <input type="button" class="layui-btn" id="find"  value="验证码" />
                             </div>
                         </div>
-                            <p style="color: red; size: 20px" id="emailP"></p>
+                            <p style="color: red; size: 20px" id="emailP">${requestScope.error}</p>
                     </div>
                     <div class="layui-form-item login-btn">
                         <div class="layui-input-block">
@@ -152,7 +152,7 @@
         });
 
         $("#find").click(function() {
-            alert(flag)
+            // alert(flag)
             if (flag==true){
                 var obj=$("#find");
                 $.ajax({

@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 </head>
 <body id="list-cont">
+<c:if test="${sessionScope.user==null}">
   <div class="site-nav-bg">
     <div class="site-nav w1200">
       <p class="sn-back-home">
@@ -23,6 +25,23 @@
       </div>
     </div>
   </div>
+</c:if>
+<c:if test="${sessionScope.user!=null}">
+  <div class="site-nav-bg">
+    <div class="site-nav w1200">
+      <p class="sn-back-home">
+        <i class="layui-icon layui-icon-home"></i>
+        <a href="#">首页</a>
+      </p>
+      <div class="sn-quick-menu">
+        <div class="login"><a href="user/userCenter.jsp">用户中心</a></div>
+        <div class="sp-cart"><a href="shopcart.jsp">购物车</a><span>${sessionScope.cou}</span></div>
+        <div class="login" style="margin-left: 15px;"><a href="">退出登录</a></div>
+      </div>
+
+    </div>
+  </div>
+</c:if>
 
 
   <div class="header">

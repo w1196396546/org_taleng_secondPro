@@ -120,7 +120,7 @@ public class RegisterServlet extends BaseServlet {
 //        设置debug，可以查看详细的发送log
                 session.setDebug(true);
                 //通过封装好的静态方法，得到需要发送的邮箱内容
-                String msg = RegisterSuccess.getRegisterSuccessCode(email, pwd);
+                String msg = HtmlText.getRegisterSuccessCode(email,pwd);
 
 
                 //得到邮箱对象
@@ -133,7 +133,7 @@ public class RegisterServlet extends BaseServlet {
                 transport.sendMessage(message,message.getAllRecipients());
                 //关闭连接
                 transport.close();
-
+                response.sendRedirect("user/login.jsp");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -142,6 +142,7 @@ public class RegisterServlet extends BaseServlet {
             request.setAttribute("error","验证码错误!");
             request.getRequestDispatcher("user/register.jsp").forward(request, response);
         }
+        request.getSession().removeAttribute("code");
 
     }
 

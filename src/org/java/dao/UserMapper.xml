@@ -4,4 +4,20 @@
     <select id="getCount" resultType="int">
         select count(*) from user_info where user_email=#{email}
     </select>
+
+
+    <select id="getLoginCheck" resultType="int">
+        select count(*) from user_info where user_email=#{email} and user_pwd=#{pwd}
+    </select>
+    <select id="getUser" resultType="userInfo">
+        select user_id userId,user_email userEmail,user_pwd userPwd from user_info where user_email=#{email} and user_pwd=#{pwd}
+    </select>
+
+    <update id="updatePwd">
+        update user_info set user_pwd=#{pwd} where user_email=#{email}
+    </update>
+
+    <select id="getUserShoppingCartCount" resultType="int">
+        select count(*) from usershoppingcart where user_id=#{email}
+    </select>
 </mapper>
