@@ -20,7 +20,7 @@
       </p>
       <div class="sn-quick-menu">
         <div class="login"><a href="login.jsp">登录</a></div>
-        <div class="sp-cart"><a href="shopcart.jsp">购物车</a><span>2</span></div>
+        <div class="sp-cart"><a href="../shopcart.jsp">购物车</a><span>2</span></div>
       </div>
     </div>
   </div>
@@ -54,10 +54,10 @@
       <div class="inner-cont0">
         <div class="inner-cont1 w1200">
           <div class="inner-cont2">
-            <a href="commodity.jsp" class="active">所有商品</a>
-            <a href="buytoday.jsp">今日团购</a>
-            <a href="information.jsp">母婴资讯</a>
-            <a href="about.jsp">关于我们</a>
+            <a href="../commodity.jsp" class="active">所有商品</a>
+            <a href="../buytoday.jsp">今日团购</a>
+            <a href="../information.jsp">母婴资讯</a>
+            <a href="../about.jsp">关于我们</a>
           </div>
         </div>
       </div>
@@ -91,8 +91,8 @@
           </form>
           <div class="layui-inline veri-code">
             <div class="layui-input-inline" >
-              <a href="user?method=backPwd">忘记密码</a>
-              <a href="" style="margin-left: 180px;">用户注册</a>
+              <a href="?method=backPwd">忘记密码</a>
+              <a href="register.jsp" style="margin-left: 180px;">用户注册</a>
             </div>
           </div>
         </div>

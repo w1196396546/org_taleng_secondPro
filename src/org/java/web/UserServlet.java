@@ -51,6 +51,8 @@ public class UserServlet extends BaseServlet {
         if (count==0){
             PrintWriter out = response.getWriter();
             out.write("用户名不存在!");
+            out.flush();
+            out.close();
         }
     }
 
@@ -78,6 +80,7 @@ public class UserServlet extends BaseServlet {
             int code=(int)((Math.random()*9+1)*100000);
             //通过封装好的静态方法，得到需要发送的邮箱内容
             String msg = HtmlText.getText(code);
+
             //得到邮箱对象
             MimeMessage message = JavaMailUtil.creatMimeMessage(session, JavaMailUtil.emailAccount, JavaMailUtil.receiveMailAccount, msg);
 //        根据session获取邮件传输对象

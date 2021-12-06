@@ -10,7 +10,7 @@ public class MD5 {
 
     @Test
     public static String MD5Email(String userEmail){
-        byte[] bytes = "1196396546@qq.com".getBytes();
+        byte[] bytes = userEmail.getBytes();
         try {
             MessageDigest md5=MessageDigest.getInstance("MD5");
             byte[] digest = md5.digest(bytes);
