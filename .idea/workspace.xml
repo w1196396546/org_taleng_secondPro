@@ -9,25 +9,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/java/demo/Demo.java" afterDir="false" />
+    <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/OperationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/OperationMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/LoggingMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/LoggingMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/LoggingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/LoggingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/OperationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/OperationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/impl/LoggingMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/impl/LoggingMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/impl/OperationMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/impl/OperationMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/web/OperationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/OperationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/about.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/buytoday.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/buytoday.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/commodity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/commodity.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/information.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/information.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/shopcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/shopcart.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +38,12 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -882,6 +871,7 @@
       <workItem from="1638841408369" duration="114000" />
       <workItem from="1638841632618" duration="7979000" />
       <workItem from="1638856454574" duration="7297000" />
+      <workItem from="1638865231470" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Message">
       <created>1638616423338</created>
@@ -981,7 +971,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638860282917</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Default Changelist">
+      <created>1638864955074</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1638864955074</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">

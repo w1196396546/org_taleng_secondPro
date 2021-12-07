@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_2021_12_7_16_05_[Default_Changelist]" date="1638864339996" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_12_7_16_05_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021/12/7 16:05 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" />
+    <option name="AFTER_PATH" value="out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_12_7_16_05_[Default_Changelist]/OperationMapperImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/org_taleng_secondPro/org/java/dao/OperationMapper.class" />
+    <option name="AFTER_PATH" value="out/production/org_taleng_secondPro/org/java/dao/OperationMapper.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_12_7_16_05_[Default_Changelist]/OperationMapper.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/org_taleng_secondPro/org/java/dao/impl/LoggingMapperImpl.class" />
+    <option name="AFTER_PATH" value="out/production/org_taleng_secondPro/org/java/dao/impl/LoggingMapperImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_12_7_16_05_[Default_Changelist]/LoggingMapperImpl.class" />
+  </binary>
+</changelist>
