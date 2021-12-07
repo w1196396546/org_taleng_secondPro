@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/entity/IpShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/entity/IpShoppingCart.java" afterDir="false" />
-    </list>
+    <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -827,7 +824,7 @@
       <workItem from="1638799646656" duration="135000" />
       <workItem from="1638835838628" duration="4832000" />
       <workItem from="1638841408369" duration="114000" />
-      <workItem from="1638841632618" duration="332000" />
+      <workItem from="1638841632618" duration="415000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Message">
       <created>1638616423338</created>
@@ -906,7 +903,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638841056456</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Default Changelist">
+      <created>1638841996441</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1638841996441</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
