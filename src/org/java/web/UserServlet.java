@@ -14,6 +14,7 @@ import javax.mail.Transport;
 import javax.mail.internet.MimeMessage;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -185,9 +186,34 @@ public class UserServlet extends BaseServlet {
 
     }
     protected void getShoppingCartCount(HttpServletRequest request,HttpServletResponse response,String md5Email)throws ServletException, IOException{
+        //获得前台的ip地址
+        String remoteAddr = request.getRemoteAddr();
+        System.out.println(remoteAddr);
+        //先根据ip地址查询购物车中是否存在数据
+        int count = userService.getIpShoppingCartCount(remoteAddr);
         //登录成功之后去加载购物车内的总数
         int cou = userService.getUserShoppingCartCount(md5Email);
         System.out.println(cou);
-        request.getSession().setAttribute("cou",cou);
+//        request.getSession().setAttribute("cou",cou);
+        Cookie cookie=new Cookie("cou",String.valueOf(cou) );
+        cookie.setMaxAge(60*3600);
+        response.addCookie(cookie);
+
     }
+
+    /**
+     * 用户退出登录
+     * @param request
+     * @param response
+     * @param md5Email
+     * @throws ServletException
+     * @throws IOException
+     */
+//    protected void logOut(HttpServletRequest request,HttpServletResponse response,String md5Email)throws ServletException, IOException {
+//        request.getSession().removeAttribute("user");
+//        Cookie[] cookies = request.getCookies();
+//        for (int i = 0; i < cookies.length; i++) {
+//            String name = cookies[i].getName();
+//        }
+//    }
 }

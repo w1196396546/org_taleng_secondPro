@@ -37,6 +37,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public int getIpShoppingCartCount(String ip) {
+        int count = userMapper.getIpShoppingCartCount(ip);
+        return count;
+    }
+
+    @Override
     public int getUserShoppingCartCount(String email) {
         int count = userMapper.getUserShoppingCartCount(email);
         return count;

@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="org_taleng_secondPro:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/applicationContent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/InitMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/LoggingMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/OperationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/RegisterMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/RegisterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/InitMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/LoggingMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/OperationMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/UserMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/entity/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/RegisterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/impl/RegisterSerivceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/GetProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/HtmlText.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/JavaMailUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/JdbcUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/MD5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/BaseServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/InitServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/LoggingServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/OperationServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/RegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/activation-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/alipay-sdk-java20170324180803.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/cglib-nodep-2.1_3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/druid-1.0.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/druid-1.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/javax.mail-1.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/javax.mail-api-1.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/log4j-1.2.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/mybatis-3.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/mybatis-spring-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.37-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-aspects-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-beans-5.0.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-core-5.0.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-jdbc-5.0.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-tx-5.0.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/about.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/backPwd/checkIdentity.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/buytoday.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/commodity.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/details.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/information.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/js/vue-2.4.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/buy_banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/car-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/details_img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/details_img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/details_imgbig.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/icon_gou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/img12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/load_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/new1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/new2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/off-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/paging_img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/paging_img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/paging_img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/sort-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img_banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_img3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/js/util/car.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/js/util/mm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/shopcart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/user/backPwd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/user/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/user/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/applicationContent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/InitMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/LoggingMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/OperationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/RegisterMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/RegisterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/InitMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/LoggingMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/UserMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/entity/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/RegisterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/impl/RegisterSerivceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/GetProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/HtmlText.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/JavaMailUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/JdbcUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/MD5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/BaseServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/InitServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/LoggingServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/OperationServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/RegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/java/entity/IpShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/commodity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/commodity.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring" />
+        <option value="mapper" />
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>phone</find>
+      <find>settime</find>
+      <find>legend</find>
+      <find>login</find>
+      <find>getLoginCheck</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a6caf479-8026-4b44-bea5-28c4ad53b507" />
+        <option name="url" value="https://github.com/w1196396546/org_taleng_secondPro.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/org/java/dao/impl/LoggingDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/java/web/LoggingServlet.java" />
+        <option value="$PROJECT_DIR$/src/org/java/util/JdbcUtil.java" />
+        <option value="$PROJECT_DIR$/web/about.jsp" />
+        <option value="$PROJECT_DIR$/web/buytoday.jsp" />
+        <option value="$PROJECT_DIR$/web/details.jsp" />
+        <option value="$PROJECT_DIR$/web/information.jsp" />
+        <option value="$PROJECT_DIR$/web/shopcart.jsp" />
+        <option value="$PROJECT_DIR$/src/org/java/dao/impl/OperationDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/java/web/OperationServlet.java" />
+        <option value="$PROJECT_DIR$/src/org/java/web/InitServlet.java" />
+        <option value="$PROJECT_DIR$/src/org/java/util/htmlText.java" />
+        <option value="$PROJECT_DIR$/src/org/java/util/JavaMailUtil.java" />
+        <option value="$PROJECT_DIR$/src/org/java/service/impl/InitService.java" />
+        <option value="$PROJECT_DIR$/src/org/java/demo/Demo.java" />
+        <option value="$PROJECT_DIR$/src/org/java/service/InitService.java" />
+        <option value="$PROJECT_DIR$/src/org/java/service/impl/InitServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/java/dao/InitMapper.java" />
+        <option value="$PROJECT_DIR$/src/org/java/dao/InitMapper.xml" />
+        <option value="$PROJECT_DIR$/src/org/java/dao/impl/InitMapperImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/java/util/Getproperties.java" />
+        <option value="$PROJECT_DIR$/src/org/java/util/GetProperties.java" />
+        <option value="$PROJECT_DIR$/config/druid.properties" />
+        <option value="$PROJECT_DIR$/config/db.properties" />
+        <option value="$PROJECT_DIR$/src/org/java/web/BaseServlet.java" />
+        <option value="$PROJECT_DIR$/src/org/java/util/MD5.java" />
+        <option value="$PROJECT_DIR$/web/backPwd.jsp" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/res/static/css/main.css" />
+        <option value="$PROJECT_DIR$/src/org/java/dao/RegisterMapper.xml" />
+        <option value="$PROJECT_DIR$/src/org/java/dao/RegisterMapper.java" />
+        <option value="$PROJECT_DIR$/src/org/java/service/RegisterService.java" />
+        <option value="$PROJECT_DIR$/src/org/java/service/impl/RegisterSerivceImpl.java" />
+        <option value="$PROJECT_DIR$/web/register.jsp" />
+        <option value="$PROJECT_DIR$/web/user/register.jsp" />
+        <option value="$PROJECT_DIR$/src/org/java/util/UserFilter.java" />
+        <option value="$PROJECT_DIR$/src/org/java/entity/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/org/java/util/RegisterSuccess.java" />
+        <option value="$PROJECT_DIR$/src/org/java/util/HtmlText.java" />
+        <option value="$PROJECT_DIR$/src/org/java/web/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/web/user/backPwd.jsp" />
+        <option value="$PROJECT_DIR$/config/applicationContent.xml" />
+        <option value="$PROJECT_DIR$/web/backPwd/checkIdentity.jsp" />
+        <option value="$PROJECT_DIR$/web/user/login.jsp" />
+        <option value="$PROJECT_DIR$/src/org/java/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/org/java/dao/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/org/java/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/java/web/UserServlet.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/commodity.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\mavenjar" />
+        <option name="mavenHome" value="D:/apache-maven-3.8.2" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.8.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="951" />
+    <option name="y" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectId" id="21tVK2aiKapD7k1qPiZvNXZVOKB" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>AccessibilityLintAndroid</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Assignment issuesGroovy</id>
+          </State>
+          <State>
+            <id>Assignment issuesJava</id>
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CDI (Contexts and Dependency Injection)</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code maturityJava</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesGroovy</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>FreeMarker</id>
+          </State>
+          <State>
+            <id>GPathGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJava</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Google App Engine</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Guice</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>IconsUsabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>InitializationJava</id>
+          </State>
+          <State>
+            <id>InternationalizationJava</id>
+          </State>
+          <State>
+            <id>InternationalizationLintAndroid</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>JUnitJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java interop issuesKotlin</id>
+          </State>
+          <State>
+            <id>Java language level issuesJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavadocJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>LintLintAndroid</id>
+          </State>
+          <State>
+            <id>LoggingJava</id>
+          </State>
+          <State>
+            <id>MemoryJava</id>
+          </State>
+          <State>
+            <id>MessagesCorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Naming conventionsGroovy</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Naming conventionsKotlin</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Other problemsKotlin</id>
+          </State>
+          <State>
+            <id>PerformanceJava</id>
+          </State>
+          <State>
+            <id>PerformanceLintAndroid</id>
+          </State>
+          <State>
+            <id>PortabilityJava</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsKotlin</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Redundant constructsKotlin</id>
+          </State>
+          <State>
+            <id>Reflective accessJava</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>SecurityJava</id>
+          </State>
+          <State>
+            <id>SecurityLintAndroid</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Struts</id>
+          </State>
+          <State>
+            <id>Struts 1Struts</id>
+          </State>
+          <State>
+            <id>Struts 2Struts</id>
+          </State>
+          <State>
+            <id>Style issuesKotlin</id>
+          </State>
+          <State>
+            <id>StyleGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>UI Form</id>
+          </State>
+          <State>
+            <id>UsabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>Velocity</id>
+          </State>
+          <State>
+            <id>Verbose or redundant code constructsJava</id>
+          </State>
+          <State>
+            <id>VisibilityJava</id>
+          </State>
+          <State>
+            <id>WebSocket</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="backPwd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="org_taleng_secondPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="org_taleng_secondPro" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1638794600070" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\idea项目\第二次项目\org_taleng_secondPro\web\user" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.java.util" />
+      <recent name="org.java.web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\idea项目\第二次项目\org_taleng_secondPro\web\js" />
+      <recent name="E:\idea项目\第二次项目\org_taleng_secondPro\web" />
+      <recent name="E:\idea项目\第二次项目\org_taleng_secondPro\web\WEB-INF\lib" />
+      <recent name="E:\idea项目\第二次项目\org_taleng_secondPro\config" />
+      <recent name="E:\idea项目\第二次项目\org_taleng_secondPro" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 8.5.71">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.java.demo.Demo" />
+      <module name="org_taleng_secondPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.java.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MD5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org_taleng_secondPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.java.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.java.util" />
+      <option name="MAIN_CLASS_NAME" value="org.java.util.MD5" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MD5.MD5Email" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org_taleng_secondPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.java.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.java.util" />
+      <option name="MAIN_CLASS_NAME" value="org.java.util.MD5" />
+      <option name="METHOD_NAME" value="MD5Email" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.71" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.71" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <deployment>
+        <artifact name="org_taleng_secondPro:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_71_org_taleng_secondPro" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="7978" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="org_taleng_secondPro:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.71" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Default_(Template)_Project" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="13927" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MD5" />
+      <item itemvalue="JUnit.MD5.MD5Email" />
+      <item itemvalue="Tomcat 服务器.Tomcat 8.5.71" />
+      <item itemvalue="Tomcat 服务器.tomcat" />
+      <item itemvalue="应用程序.Demo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MD5.MD5Email" />
+        <item itemvalue="JUnit.MD5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="" />
+      <created>1638586249014</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638586249014</updated>
+      <workItem from="1638586252851" duration="1718000" />
+      <workItem from="1638588041465" duration="1451000" />
+      <workItem from="1638616311003" duration="871000" />
+      <workItem from="1638617251793" duration="929000" />
+      <workItem from="1638619325328" duration="808000" />
+      <workItem from="1638666698817" duration="22414000" />
+      <workItem from="1638749573122" duration="5673000" />
+      <workItem from="1638759730214" duration="361000" />
+      <workItem from="1638760304929" duration="53000" />
+      <workItem from="1638760836886" duration="49000" />
+      <workItem from="1638760899462" duration="43000" />
+      <workItem from="1638763674137" duration="87000" />
+      <workItem from="1638769365228" duration="20139000" />
+      <workItem from="1638793165090" duration="1403000" />
+      <workItem from="1638794886425" duration="41000" />
+      <workItem from="1638794947548" duration="117000" />
+      <workItem from="1638795084072" duration="353000" />
+      <workItem from="1638795469707" duration="103000" />
+      <workItem from="1638799646656" duration="135000" />
+      <workItem from="1638835838628" duration="4507000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit Message">
+      <created>1638616423338</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638616423338</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit Message">
+      <created>1638619766385</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638619766385</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit Message">
+      <created>1638672396942</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638672396942</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit Message">
+      <created>1638674171840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638674171840</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit Message">
+      <created>1638683626687</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638683626687</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit Message">
+      <created>1638688683341</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638688683341</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit Message">
+      <created>1638698018358</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638698018358</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commit Message">
+      <created>1638752089827</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638752089827</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Commit Message">
+      <created>1638772069294</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638772069294</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Commit Message">
+      <created>1638793564848</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638793564848</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MD5 - 2021.12.05 at 17h 40m 55s.xml">
+      <configuration name="MD5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MD5_MD5Email - 2021.12.05 at 17h 41m 25s.xml">
+      <configuration name="MD5.MD5Email" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MD5_MD5Email - 2021.12.05 at 17h 41m 34s.xml">
+      <configuration name="MD5.MD5Email" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MD5_MD5Email - 2021.12.05 at 17h 41m 47s.xml">
+      <configuration name="MD5.MD5Email" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MD5_MD5Email - 2021.12.05 at 17h 45m 52s.xml">
+      <configuration name="MD5.MD5Email" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="61657000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8246753" visible="true" weight="0.20710456" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.17570499" side_tool="true" weight="0.17024128" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.3531915" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.18723404" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932975" weight="0.32907802" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="RNConsole" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Word Book" order="5" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Codota" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8246753" visible="true" weight="0.22453083" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.17570499" side_tool="true" weight="0.17024128" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.2141844" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.18723404" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932975" weight="0.32907802" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="RNConsole" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Word Book" order="5" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Codota" order="10" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit Message" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Message" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/res/layui/images/face/0.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/layui/images/face/1.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/layui/images/face/2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/layui/images/face/3.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/layui/images/face/68.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/impl/OperationDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/OperationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/mybatis-spring-1.2.3.jar!/org/mybatis/spring/mapper/MapperFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/demo/Demo.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/InitMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/org/java/util/GetProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/impl/OperationMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/impl/LoggingMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/LoggingMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-3.6.0.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/util/JdbcUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-tomcat-8.5.71/lib/servlet-api.jar!/javax/servlet/ServletException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/web/LoggingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/web/InitServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/web/OperationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/util/JavaMailUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/web/BaseServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/util/MD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/vue-2.4.0.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/res/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="294" column="13" lean-forward="true" selection-start-line="294" selection-start-column="13" selection-end-line="294" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/RegisterMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/RegisterMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/service/RegisterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/util/UserFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/entity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/util/RegisterSuccess.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/java/util/HtmlText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/web/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1114">
+          <caret line="144" column="50" selection-start-line="144" selection-start-column="50" selection-end-line="144" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/applicationContent.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/service/impl/RegisterSerivceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/backPwd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/backPwd/checkIdentity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/web/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3498">
+          <caret line="177" column="60" selection-start-line="177" selection-start-column="60" selection-end-line="177" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="79" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/impl/InitMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/InitMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/commodity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/dao/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

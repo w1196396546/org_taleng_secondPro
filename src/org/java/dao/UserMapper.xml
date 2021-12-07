@@ -20,4 +20,9 @@
     <select id="getUserShoppingCartCount" resultType="int">
         select count(*) from usershoppingcart where user_id=#{email}
     </select>
+
+
+    <select id="getIpShoppingCartCount" resultType="int">
+        select count(*) from ipshoppingcart where ip=#{ip}
+    </select>
 </mapper>

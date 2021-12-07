@@ -12,6 +12,8 @@ public interface UserService {
     UserInfo getUser(String email, String pwd);
     //修改密码的方法
     void updatePwd(String email,String pwd);
+    //用户登录成功，先根据ip地址查询是否存在数据
+    int getIpShoppingCartCount(String ip);
     //用户登录成功，取到购物车中的总数量用显示在页面
     int getUserShoppingCartCount(String email);
 }
