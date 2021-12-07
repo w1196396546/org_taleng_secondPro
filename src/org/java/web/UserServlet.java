@@ -179,6 +179,10 @@ public class UserServlet extends BaseServlet {
             System.out.println(user.getUserPwd());
             System.out.println(user.getUserEmail());
             request.getSession().setAttribute("user",user);
+            Cookie cookie=new Cookie("user",user.getUserEmail() );
+            System.out.println("cookie的email"+user.getUserEmail());
+            cookie.setMaxAge(60*30);
+            response.addCookie(cookie);
             getShoppingCartCount(request,response,md5Email);
             request.getRequestDispatcher("index.jsp").forward(request, response);
         }else {
@@ -262,11 +266,25 @@ public class UserServlet extends BaseServlet {
      */
     protected void logOut(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
         request.getSession().removeAttribute("user");
-        System.out.println("删除成功");
-//        Cookie[] cookies = request.getCookies();
-//        for (int i = 0; i < cookies.length; i++) {
-//            String name = cookies[i].getName();
-//            System.out.println(name);
-//        }
+        response.sendRedirect("index.jsp");
+    }
+
+    /**
+     * 查看用户购物车
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void userShoppingCart(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
+        System.out.println("come,userShoppingCart");
+        String userEmail = request.getParameter("userEmail");
+        int count = userService.getUserShoppingCartCount(userEmail);
+        if (count>0){
+            List<UserShoppingCart> list = userService.getUserShoppingCartByUserId(userEmail);
+            for (UserShoppingCart userShoppingCart : list) {
+                String goodsId = userShoppingCart.getGoodsId();
+            }
+        }
     }
 }

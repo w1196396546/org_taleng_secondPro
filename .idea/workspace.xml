@@ -10,32 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/entity/IpShoppingCart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/entity/UserShoppingCart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/UserFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/entity/IpShoppingCart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/entity/UserShoppingCart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/UserFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/java/entity/UserShoppingCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/UserFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/UserFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/entity/IpShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/entity/IpShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/java/util/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/util/UserFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -788,6 +771,21 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -855,7 +853,7 @@
       <workItem from="1638835838628" duration="4832000" />
       <workItem from="1638841408369" duration="114000" />
       <workItem from="1638841632618" duration="7979000" />
-      <workItem from="1638856454574" duration="3787000" />
+      <workItem from="1638856454574" duration="7297000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Message">
       <created>1638616423338</created>
@@ -948,7 +946,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638842055520</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Default Changelist">
+      <created>1638860282917</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638860282917</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">

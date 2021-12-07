@@ -19,20 +19,26 @@ public class UserFilter implements Filter {
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         HttpServletRequest request= (HttpServletRequest) req;
+        HttpServletResponse response= (HttpServletResponse) resp;
         HttpSession session = request.getSession();
         UserInfo user= (UserInfo) session.getAttribute("user");
         //获得请求
         String uri = request.getRequestURI();
-        int index = uri.indexOf("/user/login.jsp");
-        if (index>-1){
+        int login = uri.indexOf("/user/login.jsp");
+        if (login>-1){
             if (user!=null){
-                HttpServletResponse response= (HttpServletResponse) resp;
                 response.sendRedirect("../index.jsp");
             }
         }
+        int logOut=uri.indexOf("logOut");
+        if (logOut>-1){
+            if (user==null){
+                response.sendRedirect("index.jsp");
+            }
+        }
+
         chain.doFilter(req, resp);
     }
-
     public void init(FilterConfig config) throws ServletException {
 
     }

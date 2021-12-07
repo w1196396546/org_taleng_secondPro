@@ -35,7 +35,7 @@
       </p>
       <div class="sn-quick-menu">
         <div class="login"><a href="user/userCenter.jsp">用户中心</a></div>
-        <div class="sp-cart"><a href="shopcart.jsp">购物车</a><span>${cookie.cou.value}</span></div>
+        <div class="sp-cart"><a href="user?method=userShoppingCart&userEmail=${cookie.user.value}">购物车</a><span>${cookie.cou.value}</span></div>
         <div class="login" style="margin-left: 15px;"><a href="user?method=logOut">退出登录</a></div>
       </div>
 
