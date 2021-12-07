@@ -9,295 +9,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/applicationContent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/druid.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/InitMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/LoggingMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/OperationMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/RegisterMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/RegisterMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/InitMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/LoggingMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/OperationMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/UserMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/entity/UserInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/RegisterService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/impl/RegisterSerivceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/GetProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/HtmlText.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/JavaMailUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/JdbcUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/MD5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/BaseServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/InitServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/LoggingServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/OperationServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/RegisterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/activation-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/alipay-sdk-java20170324180803.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/cglib-nodep-2.1_3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/druid-1.0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/druid-1.1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/javax.mail-1.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/javax.mail-api-1.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/log4j-1.2.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/mybatis-3.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/mybatis-spring-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.37-bin.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/servlet-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-aspects-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-beans-5.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-core-5.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-jdbc-5.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-tx-5.0.0.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/lib/standard.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/about.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/backPwd/checkIdentity.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/buytoday.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/commodity.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/details.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/information.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/js/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/js/vue-2.4.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/buy_banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/car-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/details_img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/details_img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/details_imgbig.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/hot9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/icon_gou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/img12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/load_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/more5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/new1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/new2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/off-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/paging_img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/paging_img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/paging_img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/s_img9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/sort-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/tuan_img_banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_icon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_icon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_icon3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/img/us_img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/js/util/car.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/res/static/js/util/mm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/shopcart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/user/backPwd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/user/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/user/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/applicationContent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/druid.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/InitMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/LoggingMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/OperationMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/RegisterMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/RegisterMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/InitMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/LoggingMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/UserMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/entity/UserInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/RegisterService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/impl/RegisterSerivceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/GetProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/HtmlText.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/JavaMailUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/JdbcUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/MD5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/BaseServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/InitServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/LoggingServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/OperationServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/RegisterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/java/entity/IpShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/commodity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/commodity.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/entity/IpShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/entity/IpShoppingCart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,10 +135,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="951" />
-    <option name="y" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1048" />
+    <option name="x" value="950" />
+    <option name="y" value="-10" />
+    <option name="width" value="979" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectId" id="21tVK2aiKapD7k1qPiZvNXZVOKB" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -729,8 +443,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -829,7 +543,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1638794600070" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1638841477053" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -841,7 +555,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -859,7 +573,7 @@
       <recent name="E:\idea项目\第二次项目\org_taleng_secondPro" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat 服务器.Tomcat 8.5.71">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.71">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.java.demo.Demo" />
       <module name="org_taleng_secondPro" />
@@ -1068,11 +782,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Demo" />
       <item itemvalue="JUnit.MD5" />
       <item itemvalue="JUnit.MD5.MD5Email" />
-      <item itemvalue="Tomcat 服务器.Tomcat 8.5.71" />
-      <item itemvalue="Tomcat 服务器.tomcat" />
-      <item itemvalue="应用程序.Demo" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.71" />
+      <item itemvalue="Tomcat Server.tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -1111,7 +825,9 @@
       <workItem from="1638795084072" duration="353000" />
       <workItem from="1638795469707" duration="103000" />
       <workItem from="1638799646656" duration="135000" />
-      <workItem from="1638835838628" duration="4507000" />
+      <workItem from="1638835838628" duration="4832000" />
+      <workItem from="1638841408369" duration="114000" />
+      <workItem from="1638841632618" duration="332000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Message">
       <created>1638616423338</created>
@@ -1183,7 +899,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638793564848</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Default Changelist">
+      <created>1638841056456</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638841056456</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1204,7 +927,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61657000" />
+    <option name="totallyTimeSpent" value="61771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1218,7 +941,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8246753" visible="true" weight="0.20710456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8246753" visible="true" weight="0.21380697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1295,9 +1018,22 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit Message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Message" />
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

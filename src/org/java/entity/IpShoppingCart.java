@@ -8,7 +8,7 @@ public class IpShoppingCart implements Serializable {
 
     private String ip;
 
-    private String goodsId;
+    private String goodsIdsss;
 
     private Integer goodsNum;
 
