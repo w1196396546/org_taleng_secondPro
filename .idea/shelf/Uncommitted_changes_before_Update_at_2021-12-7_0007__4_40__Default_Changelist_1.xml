@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_2021-12-7_0007_下午_4_40_[Default_Changelist]1" date="1638866507506" recycled="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007_下午_4_40_[Default_Changelist]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021-12-7 0007 下午 4:40 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/OperationMapperImpl.class" />
+    <option name="AFTER_PATH" value="out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/OperationMapperImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007_下午_4_40_[Default_Changelist]1/OperationMapperImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/LoggingMapperImpl.class" />
+    <option name="AFTER_PATH" value="out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/LoggingMapperImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007_下午_4_40_[Default_Changelist]1/LoggingMapperImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" />
+    <option name="AFTER_PATH" value="out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007_下午_4_40_[Default_Changelist]1/UserServlet.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/org_taleng_secondPro/org/java/web/OperationServlet.class" />
+    <option name="AFTER_PATH" value="out/production/org_taleng_secondPro/org/java/web/OperationServlet.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007_下午_4_40_[Default_Changelist]1/OperationServlet.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/OperationMapper.class" />
+    <option name="AFTER_PATH" value="out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/OperationMapper.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007_下午_4_40_[Default_Changelist]1/OperationMapper.class" />
+  </binary>
+</changelist>

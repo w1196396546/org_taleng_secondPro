@@ -1,6 +1,7 @@
 package org.java.dao;
 
 import org.apache.ibatis.annotations.Param;
+import org.java.entity.GoodsInfo;
 import org.java.entity.IpShoppingCart;
 import org.java.entity.UserInfo;
 import org.java.entity.UserShoppingCart;
@@ -28,4 +29,6 @@ public interface UserMapper {
     void delIpShoppingCartByIp(@Param("ip")String ip);
     //用户登录成功之后，加载购物车物品的总数
     int getUserShoppingCartCount(@Param("email")String email);
+    //用户点击购物车之后，根据商品id，找出所有的商品信息
+    List<GoodsInfo> getAllUserShoppingCartContent(@Param("goodsId") String goodsId);
 }

@@ -1,6 +1,7 @@
 package org.java.service;
 
 import org.apache.ibatis.annotations.Param;
+import org.java.entity.GoodsInfo;
 import org.java.entity.IpShoppingCart;
 import org.java.entity.UserInfo;
 import org.java.entity.UserShoppingCart;
@@ -31,4 +32,6 @@ public interface UserService {
     void addUserShoppingCart(String email,String goodsId,Integer goodsNum);
     //全部执行完成，删除ip购物车表的数据
     void delIpShoppingCartByIp(String ip);
+    //点击购物车时，找出所有的购物信息
+    List<GoodsInfo> getAllUserShoppingCartContent(String goodId);
 }

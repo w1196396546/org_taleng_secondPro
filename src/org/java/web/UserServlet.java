@@ -1,5 +1,7 @@
 package org.java.web;
 
+import com.alibaba.fastjson.JSON;
+import org.java.entity.GoodsInfo;
 import org.java.entity.IpShoppingCart;
 import org.java.entity.UserInfo;
 import org.java.entity.UserShoppingCart;
@@ -279,12 +281,27 @@ public class UserServlet extends BaseServlet {
     protected void userShoppingCart(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
         System.out.println("come,userShoppingCart");
         String userEmail = request.getParameter("userEmail");
+        System.out.println(userEmail);
+        List<GoodsInfo> goodsInfoList=null;
         int count = userService.getUserShoppingCartCount(userEmail);
         if (count>0){
             List<UserShoppingCart> list = userService.getUserShoppingCartByUserId(userEmail);
             for (UserShoppingCart userShoppingCart : list) {
                 String goodsId = userShoppingCart.getGoodsId();
+                goodsInfoList = userService.getAllUserShoppingCartContent(goodsId);
+
+                request.setAttribute("goodsInfoList",goodsInfoList);
             }
         }
+        request.getRequestDispatcher("shopcart.jsp").forward(request,response);
+//        System.out.println(goodsInfoList.toString());
+//                String json = JSON.toJSONString(goodsInfoList);
+//                System.out.println(json);
+//                response.setCharacterEncoding("utf-8");
+//                response.setContentType("text/html;charset=utf-8");
+//                PrintWriter out = response.getWriter();
+//                out.write(json);
+//                out.flush();
+//                out.close();
     }
 }

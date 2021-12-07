@@ -3,6 +3,11 @@ package org.java.web;
 import org.java.dao.OperationMapper;
 import org.java.dao.impl.OperationMapperImpl;
 import org.java.entity.GoodsInfo;
+import org.java.entity.IpShoppingCart;
+import org.java.service.OperationService;
+import org.java.service.UserService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,7 +23,8 @@ import java.util.List;
  */
 @WebServlet("/operation")
 public class OperationServlet extends BaseServlet {
-
+    private ApplicationContext cxt=new ClassPathXmlApplicationContext("applicationContent.xml");
+    OperationService  operationService= (OperationService) cxt.getBean("operationService");
     protected void commodity(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         OperationMapper opm=new OperationMapperImpl();
         List<GoodsInfo> list=opm.getGoodsInfo();
@@ -34,5 +40,30 @@ public class OperationServlet extends BaseServlet {
         request.getRequestDispatcher("details.jsp").forward(request,response);
     }
 
+    /**
+     * 这是没有登录时的ip购物车
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void showIpShoppingCart(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+                //获得访问页面用户的ip地址
+                String remoteAddr = request.getRemoteAddr();
+                System.out.println(remoteAddr);
+        int count = operationService.getIpShoppingCartCount(remoteAddr);
+        System.out.println(count);
+        if (count>0){
+            //代表IP购物车存在数据
+            List<IpShoppingCart> list = operationService.getIpShoppingCartByIp(remoteAddr);
+            for (IpShoppingCart ipShoppingCart : list) {
+                List<GoodsInfo> goodsInfoList = operationService.getAllIpShoppingCartContent(ipShoppingCart.getGoodsId());
+                request.setAttribute("goodsInfoList",goodsInfoList);
+            }
+        }
+        request.getRequestDispatcher("shopcart.jsp").forward(request,response);
 
-}
+    }
+
+
+    }

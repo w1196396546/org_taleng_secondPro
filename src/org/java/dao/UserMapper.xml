@@ -47,4 +47,8 @@
     <update id="delIpShoppingCartByIp">
         delete from ipshoppingcart where ip=#{ip}
     </update>
+
+    <select id="getAllUserShoppingCartContent" resultType="goodsInfo">
+        select * from goods where goods_id=#{goodsId}
+    </select>
 </mapper>

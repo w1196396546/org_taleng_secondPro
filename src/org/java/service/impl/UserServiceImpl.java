@@ -1,6 +1,7 @@
 package org.java.service.impl;
 
 import org.java.dao.UserMapper;
+import org.java.entity.GoodsInfo;
 import org.java.entity.IpShoppingCart;
 import org.java.entity.UserInfo;
 import org.java.entity.UserShoppingCart;
@@ -77,5 +78,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public void delIpShoppingCartByIp(String ip) {
         userMapper.delIpShoppingCartByIp(ip);
+    }
+
+    @Override
+    public List<GoodsInfo> getAllUserShoppingCartContent(String goodId) {
+        List<GoodsInfo> list = userMapper.getAllUserShoppingCartContent(goodId);
+        return list;
     }
 }

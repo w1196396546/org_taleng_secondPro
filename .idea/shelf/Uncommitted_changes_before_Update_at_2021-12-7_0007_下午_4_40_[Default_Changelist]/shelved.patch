@@ -1,0 +1,114 @@
+Index: out/artifacts/org_taleng_secondPro_war_exploded/about.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%@ page contentType=\"text/html;charset=UTF-8\" language=\"java\" %>\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <title>Document</title>\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../res/static/css/main.css\">\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../res/layui/css/layui.css\">\r\n  <script type=\"text/javascript\" src=\"../res/layui/layui.js\"></script>\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0\">\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\">\r\n</head>\r\n<body>\r\n\r\n  <div class=\"site-nav-bg\">\r\n    <div class=\"site-nav w1200\">\r\n      <p class=\"sn-back-home\">\r\n        <i class=\"layui-icon layui-icon-home\"></i>\r\n        <a href=\"#\">首页</a>\r\n      </p>\r\n      <div class=\"sn-quick-menu\">\r\n        <div class=\"login\"><a href=\"user/login.jsp\">登录</a></div>\r\n        <div class=\"sp-cart\"><a href=\"shopcart.jsp\">购物车</a><span>2</span></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n  <div class=\"header\">\r\n    <div class=\"headerLayout w1200\">\r\n      <div class=\"headerCon\">\r\n        <h1 class=\"mallLogo\">\r\n          <a href=\"#\" title=\"母婴商城\">\r\n            <img src=\"../res/static/img/logo.png\">\r\n          </a>\r\n        </h1>\r\n        <div class=\"mallSearch\">\r\n          <form action=\"\" class=\"layui-form\" novalidate>\r\n            <input type=\"text\" name=\"title\" required  lay-verify=\"required\" autocomplete=\"off\" class=\"layui-input\" placeholder=\"请输入需要的商品\">\r\n            <button class=\"layui-btn\" lay-submit lay-filter=\"formDemo\">\r\n                <i class=\"layui-icon layui-icon-search\"></i>\r\n            </button>\r\n            <input type=\"hidden\" name=\"\" value=\"\">\r\n          </form>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <div class=\"content content-nav-base about-content\">\r\n    <div class=\"main-nav\">\r\n      <div class=\"inner-cont0\">\r\n        <div class=\"inner-cont1 w1200\">\r\n          <div class=\"inner-cont2\">\r\n            <a href=\"commodity.jsp\">所有商品</a>\r\n            <a href=\"buytoday.jsp\">今日团购</a>\r\n            <a href=\"information.jsp\">母婴资讯</a>\r\n            <a href=\"about.jsp\"  class=\"active\">关于我们</a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"banner-box\">\r\n      <div class=\"banner\"></div>\r\n    </div>\r\n    <div class=\"brief-content layui-clear w1200\">\r\n      <div class=\"img-box\">\r\n        <img src=\"../res/static/img/us_img1.jpg\">\r\n        <img class=\"top\" src=\"../res/static/img/us_img2.jpg\">\r\n      </div>\r\n      <div class=\"text\">\r\n        <p>我们的母婴产业2016年涉足母婴行业，以品牌经销为主，在强大市场的推动下，于2016年创立自己的独立品牌。公司立足于江西南昌，2年的品牌沉淀和运营经验让我们在行业中获得良好的口碑和市场份额。以直营+连锁加盟模式，让成功可复制，成为越来越多中小投资者的优选项目，更多的妈妈青睐我们的产品。</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"banner-text\">\r\n      <div class=\"w1200\">\r\n        <p>我们的母婴产业2016年涉足母婴行业，以品牌经销为主，在强大市场的推动下，于2016年创立自己的独立品牌。公司立足于江西南昌，2年的品牌沉淀和运营经验让我们在行业中获得良好的口碑和市场份额。以直营+连锁加盟模式，让成功可复制，成为越来越多中小投资者的优选项目，更多的妈妈青睐我们的产品。</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"after-sale w1200\">\r\n      <h4>配送售后</h4>\r\n      <div class=\"item-box\">\r\n        <div class=\"item item1\">\r\n          <div class=\"img-box\">\r\n            <img src=\"../res/static/img/us_icon1.png\">\r\n          </div>\r\n          <p>7天无理由退换货</p>\r\n        </div>\r\n        <div class=\"item item2\">\r\n          <div class=\"img-box\">\r\n            <img src=\"../res/static/img/us_icon2.png\">\r\n          </div>\r\n          <p>全场满99元顺丰包邮</p>\r\n        </div>\r\n        <div class=\"item item3\">\r\n          <div class=\"img-box\">\r\n            <img src=\"../res/static/img/us_icon3.png\">\r\n          </div>\r\n          <p>优质客服服务</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n<script type=\"text/javascript\">\r\n\r\nlayui.config({\r\n    base: '../res/static/js/util/' //你存放新模块的目录，注意，不是layui的模块目录\r\n  }).use(['mm'],function(){\r\n      var\r\n     mm = layui.mm;\r\n  \r\n    \r\n\r\n});\r\n</script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out/artifacts/org_taleng_secondPro_war_exploded/about.jsp b/out/artifacts/org_taleng_secondPro_war_exploded/about.jsp
+--- a/out/artifacts/org_taleng_secondPro_war_exploded/about.jsp	
++++ b/out/artifacts/org_taleng_secondPro_war_exploded/about.jsp	
+@@ -1,4 +1,5 @@
+ <%@ page contentType="text/html;charset=UTF-8" language="java" %>
++<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+@@ -12,6 +13,7 @@
+ </head>
+ <body>
+ 
++<c:if test="${sessionScope.user==null}">
+   <div class="site-nav-bg">
+     <div class="site-nav w1200">
+       <p class="sn-back-home">
+@@ -24,6 +26,23 @@
+       </div>
+     </div>
+   </div>
++</c:if>
++<c:if test="${sessionScope.user!=null}">
++  <div class="site-nav-bg">
++    <div class="site-nav w1200">
++      <p class="sn-back-home">
++        <i class="layui-icon layui-icon-home"></i>
++        <a href="#">首页</a>
++      </p>
++      <div class="sn-quick-menu">
++        <div class="login"><a href="user/userCenter.jsp">用户中心</a></div>
++        <div class="sp-cart"><a href="user?method=userShoppingCart&userEmail=${cookie.user.value}">购物车</a><span>${cookie.cou.value}</span></div>
++        <div class="login" style="margin-left: 15px;"><a href="user?method=logOut">退出登录</a></div>
++      </div>
++
++    </div>
++  </div>
++</c:if>
+ 
+ 
+ 
+@@ -54,7 +73,7 @@
+       <div class="inner-cont0">
+         <div class="inner-cont1 w1200">
+           <div class="inner-cont2">
+-            <a href="commodity.jsp">所有商品</a>
++            <a href="operation?method=operation">所有商品</a>
+             <a href="buytoday.jsp">今日团购</a>
+             <a href="information.jsp">母婴资讯</a>
+             <a href="about.jsp"  class="active">关于我们</a>
+Index: out/artifacts/org_taleng_secondPro_war_exploded/information.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%@ page contentType=\"text/html;charset=UTF-8\" language=\"java\" %>\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <title>Document</title>\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../res/static/css/main.css\">\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../res/layui/css/layui.css\">\r\n  <script type=\"text/javascript\" src=\"../res/layui/layui.js\"></script>\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0\">\r\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge,chrome=1\">\r\n</head>\r\n<body>\r\n\r\n  <div class=\"site-nav-bg\">\r\n    <div class=\"site-nav w1200\">\r\n      <p class=\"sn-back-home\">\r\n        <i class=\"layui-icon layui-icon-home\"></i>\r\n        <a href=\"#\">首页</a>\r\n      </p>\r\n      <div class=\"sn-quick-menu\">\r\n        <div class=\"login\"><a href=\"user/login.jsp\">登录</a></div>\r\n        <div class=\"sp-cart\"><a href=\"shopcart.jsp\">购物车</a><span>2</span></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n\r\n  <div class=\"header\">\r\n    <div class=\"headerLayout w1200\">\r\n      <div class=\"headerCon\">\r\n        <h1 class=\"mallLogo\">\r\n          <a href=\"#\" title=\"母婴商城\">\r\n            <img src=\"../res/static/img/logo.png\">\r\n          </a>\r\n        </h1>\r\n        <div class=\"mallSearch\">\r\n          <form action=\"\" class=\"layui-form\" novalidate>\r\n            <input type=\"text\" name=\"title\" required  lay-verify=\"required\" autocomplete=\"off\" class=\"layui-input\" placeholder=\"请输入需要的商品\">\r\n            <button class=\"layui-btn\" lay-submit lay-filter=\"formDemo\">\r\n                <i class=\"layui-icon layui-icon-search\"></i>\r\n            </button>\r\n            <input type=\"hidden\" name=\"\" value=\"\">\r\n          </form>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <div class=\"content content-nav-base information-content\">\r\n    <div class=\"main-nav\">\r\n      <div class=\"inner-cont0\">\r\n        <div class=\"inner-cont1 w1200\">\r\n          <div class=\"inner-cont2\">\r\n            <a href=\"commodity.jsp\">所有商品</a>\r\n            <a href=\"buytoday.jsp\">今日团购</a>\r\n            <a href=\"information.jsp\"  class=\"active\">母婴资讯</a>\r\n            <a href=\"about.jsp\">关于我们</a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"info-list-box\">\r\n      <div class=\"info-list w1200\">\r\n        <div class=\"item-box layui-clear\" id=\"list-cont\">\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new1.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new2.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new1.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new2.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new1.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new2.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new1.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new2.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new1.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new2.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new1.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new2.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new1.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new2.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new1.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n          <div class=\"item\">\r\n            <div class=\"img\">\r\n              <img src=\"../res/static/img/new2.jpg\" alt=\"\">\r\n            </div>\r\n            <div class=\"text\">\r\n              <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n              <p class=\"data\">2016-12-24 16:33:26</p>\r\n              <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div id=\"demo0\" style=\"text-align: center;\"></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <!-- 模版引擎导入 -->\r\n  <!-- <script type=\"text/html\" id=\"demo\">\r\n    {{# layui.each(d.listCont,function(index,item){}}\r\n    <div class=\"item\">\r\n      <div class=\"img\">\r\n        <img src=\"../res/img/new1.jpg\" alt=\"\">\r\n      </div>\r\n      <div class=\"text\">\r\n        <h4>周岁内的宝宝消化不良拉肚子怎么办?</h4>\r\n        <p class=\"data\">2016-12-24 16:33:26</p>\r\n        <p class=\"info-cont\">宝宝在周岁之前体质相对较弱，特别是薄弱肠道，一不注意就会拉肚子;那么宝宝消化不良拉肚子</p>\r\n      </div>\r\n    </div>\r\n    {{# })}}\r\n  </script> -->\r\n<script>\r\n  layui.config({\r\n    base: '../res/static/js/util/' //你存放新模块的目录，注意，不是layui的模块目录\r\n  }).use(['mm','laypage'],function(){\r\n      var\r\n      mm = layui.mm,laypage = layui.laypage;\r\n      laypage.render({\r\n        elem: 'demo0'\r\n        ,count: 100 //数据总数\r\n      });\r\n    // 模版引擎导入\r\n     // var html = demo.innerHTML;\r\n     // var listCont = document.getElementById('list-cont');\r\n     //  mm.request({\r\n     //    url: '../json/information.json',\r\n     //    success : function(res){\r\n     //      console.log(res)\r\n     //      listCont.innerHTML = mm.renderHtml(html,res)\r\n     //    },\r\n     //    error: function(res){\r\n     //      console.log(res);\r\n     //    }\r\n     //  })   \r\n});\r\n\r\n</script>\r\n\r\n\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out/artifacts/org_taleng_secondPro_war_exploded/information.jsp b/out/artifacts/org_taleng_secondPro_war_exploded/information.jsp
+--- a/out/artifacts/org_taleng_secondPro_war_exploded/information.jsp	
++++ b/out/artifacts/org_taleng_secondPro_war_exploded/information.jsp	
+@@ -1,4 +1,5 @@
+ <%@ page contentType="text/html;charset=UTF-8" language="java" %>
++<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+@@ -12,6 +13,7 @@
+ </head>
+ <body>
+ 
++<c:if test="${sessionScope.user==null}">
+   <div class="site-nav-bg">
+     <div class="site-nav w1200">
+       <p class="sn-back-home">
+@@ -24,6 +26,23 @@
+       </div>
+     </div>
+   </div>
++</c:if>
++<c:if test="${sessionScope.user!=null}">
++  <div class="site-nav-bg">
++    <div class="site-nav w1200">
++      <p class="sn-back-home">
++        <i class="layui-icon layui-icon-home"></i>
++        <a href="#">首页</a>
++      </p>
++      <div class="sn-quick-menu">
++        <div class="login"><a href="user/userCenter.jsp">用户中心</a></div>
++        <div class="sp-cart"><a href="user?method=userShoppingCart&userEmail=${cookie.user.value}">购物车</a><span>${cookie.cou.value}</span></div>
++        <div class="login" style="margin-left: 15px;"><a href="user?method=logOut">退出登录</a></div>
++      </div>
++
++    </div>
++  </div>
++</c:if>
+ 
+ 
+ 
+@@ -54,7 +73,7 @@
+       <div class="inner-cont0">
+         <div class="inner-cont1 w1200">
+           <div class="inner-cont2">
+-            <a href="commodity.jsp">所有商品</a>
++            <a href="operation?method=operation">所有商品</a>
+             <a href="buytoday.jsp">今日团购</a>
+             <a href="information.jsp"  class="active">母婴资讯</a>
+             <a href="about.jsp">关于我们</a>
