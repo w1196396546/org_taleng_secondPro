@@ -71,7 +71,7 @@
       <div class="inner-cont0">
         <div class="inner-cont1 w1200">
           <div class="inner-cont2">
-            <a href="operation?method=operation" class="active">所有商品</a>
+            <a href="operation?method=commodity" class="active">所有商品</a>
             <a href="buytoday.jsp">今日团购</a>
             <a href="information.jsp">母婴资讯</a>
             <a href="about.jsp">关于我们</a>

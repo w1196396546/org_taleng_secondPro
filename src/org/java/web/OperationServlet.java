@@ -23,13 +23,15 @@ public class OperationServlet extends BaseServlet {
         OperationMapper opm=new OperationMapperImpl();
         List<GoodsInfo> list=opm.getGoodsInfo();
         request.setAttribute("listgoods",list);
+        System.out.println(234);
         request.getRequestDispatcher("commodity.jsp").forward(request,response);
     }
 
     protected void details(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        String goods_id=request.getParameter("goods_id");
-
+        String goodId=request.getParameter("goodsId");
+        request.setAttribute("goodId",goodId);
+        request.getRequestDispatcher("details.jsp").forward(request,response);
     }
 
 

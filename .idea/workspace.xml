@@ -11,6 +11,29 @@
   <component name="ChangeListManager">
     <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/OperationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/OperationMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/LoggingMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/LoggingMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/OperationMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/OperationMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/OperationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/OperationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/buytoday.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/buytoday.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/commodity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/commodity.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/information.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/information.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/shopcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/shopcart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/OperationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/OperationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/web/OperationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/OperationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/buytoday.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/buytoday.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/commodity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/commodity.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/information.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/information.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/shopcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/shopcart.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -579,7 +602,7 @@
       <recent name="E:\idea项目\第二次项目\org_taleng_secondPro" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Demo.showGoodsInfo">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.71">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -871,7 +894,7 @@
       <workItem from="1638841408369" duration="114000" />
       <workItem from="1638841632618" duration="7979000" />
       <workItem from="1638856454574" duration="7297000" />
-      <workItem from="1638865231470" duration="292000" />
+      <workItem from="1638865231470" duration="729000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Message">
       <created>1638616423338</created>
@@ -978,7 +1001,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638864955074</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Default Changelist">
+      <created>1638865556505</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638865556505</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">

@@ -74,7 +74,7 @@
       <div class="inner-cont0">
         <div class="inner-cont1 w1200">
           <div class="inner-cont2">
-            <a href="operation?method=operation" class="active">所有商品</a>
+            <a href="operation?method=commodity" class="active">所有商品</a>
             <a href="buytoday.jsp">今日团购</a>
             <a href="information.jsp">母婴资讯</a>
             <a href="about.jsp">关于我们</a>
@@ -136,7 +136,7 @@
               <c:forEach items="${listgoods}" var="lst">
                 <div class="item">
                   <div class="img">
-                    <a href="javascript:;"><img src=${lst.goods_imgaddr}></a>
+                    <a href="operation?method=details&goodId=${lst.goods_id}"><img src=${lst.goods_imgaddr}></a>
                   </div>
                   <div class="text">
                     <p class="title">${lst.goods_intro}</p>
@@ -147,186 +147,6 @@
                   </div>
                 </div>
               </c:forEach>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img1.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img2.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img3.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img1.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img2.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img3.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img1.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img2.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img3.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img1.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img2.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img3.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img1.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img2.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
-              <div class="item">
-                <div class="img">
-                  <a href="javascript:;"><img src="../res/static/img/paging_img3.jpg"></a>
-                </div>
-                <div class="text">
-                  <p class="title">森系小清新四件套</p>
-                  <p class="price">
-                    <span class="pri">￥200</span>
-                    <span class="nub">1266付款</span>
-                  </p>
-                </div>
-              </div>
             </div>
             <!-- 模版引擎导入 -->
             <!-- <script type="text/html" id="demo">
