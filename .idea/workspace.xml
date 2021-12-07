@@ -10,15 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/java/demo/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/UserFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/UserFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/util/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/util/UserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/OperationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/OperationMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/LoggingMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/LoggingMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/dao/LoggingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/LoggingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/dao/OperationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/OperationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/dao/impl/LoggingMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/impl/LoggingMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/dao/impl/OperationMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/impl/OperationMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/web/OperationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/OperationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/buytoday.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/buytoday.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/commodity.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/commodity.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/information.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/information.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/shopcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/shopcart.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +139,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\mavenjar" />
-        <option name="mavenHome" value="D:/apache-maven-3.8.2" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.8.2" />
         <option name="userSettingsFile" value="D:\apache-maven-3.8.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -548,6 +557,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1638841477053" />
@@ -580,7 +590,20 @@
       <recent name="E:\idea项目\第二次项目\org_taleng_secondPro" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.71">
+  <component name="RunManager" selected="JUnit.Demo.showGoodsInfo">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.java.demo.Demo" />
       <module name="org_taleng_secondPro" />
@@ -594,15 +617,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+    <configuration name="Demo.showGoodsInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="org_taleng_secondPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.java.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.java.demo" />
+      <option name="MAIN_CLASS_NAME" value="org.java.demo.Demo" />
+      <option name="METHOD_NAME" value="showGoodsInfo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -809,11 +835,13 @@
       <item itemvalue="Application.Demo" />
       <item itemvalue="JUnit.MD5" />
       <item itemvalue="JUnit.MD5.MD5Email" />
+      <item itemvalue="JUnit.Demo.showGoodsInfo" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.71" />
       <item itemvalue="Tomcat Server.tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo.showGoodsInfo" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="JUnit.MD5.MD5Email" />
         <item itemvalue="JUnit.MD5" />
@@ -1170,7 +1198,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/apache-tomcat-8.5.71/lib/servlet-api.jar!/javax/servlet/ServletException.class">
+    <entry file="jar://$PROJECT_DIR$/../../../apache-tomcat-8.5.71/lib/servlet-api.jar!/javax/servlet/ServletException.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />

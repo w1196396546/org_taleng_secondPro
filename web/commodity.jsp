@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,7 +74,7 @@
       <div class="inner-cont0">
         <div class="inner-cont1 w1200">
           <div class="inner-cont2">
-            <a href="commodity.jsp" class="active">所有商品</a>
+            <a href="operation?method=operation" class="active">所有商品</a>
             <a href="buytoday.jsp">今日团购</a>
             <a href="information.jsp">母婴资讯</a>
             <a href="about.jsp">关于我们</a>
@@ -132,6 +133,20 @@
               <span>200个</span>
             </div>
             <div class="cont-list layui-clear" id="list-cont">
+              <c:forEach items="${listgoods}" var="lst">
+                <div class="item">
+                  <div class="img">
+                    <a href="javascript:;"><img src=${lst.goods_imgaddr}></a>
+                  </div>
+                  <div class="text">
+                    <p class="title">${lst.goods_intro}</p>
+                    <p class="price">
+                      <span class="pri">${lst.goods_price}</span>
+                      <span class="nub">1266付款</span>
+                    </p>
+                  </div>
+                </div>
+              </c:forEach>
               <div class="item">
                 <div class="img">
                   <a href="javascript:;"><img src="../res/static/img/paging_img1.jpg"></a>

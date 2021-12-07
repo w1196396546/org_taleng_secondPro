@@ -1,11 +1,16 @@
 package org.java.web;
 
+import org.java.dao.OperationMapper;
+import org.java.dao.impl.OperationMapperImpl;
+import org.java.entity.GoodsInfo;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * 这是操作的servlet
@@ -13,7 +18,17 @@ import java.io.IOException;
  */
 @WebServlet("/operation")
 public class OperationServlet extends BaseServlet {
-    protected void operation(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    protected void commodity(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        OperationMapper opm=new OperationMapperImpl();
+        List<GoodsInfo> list=opm.getGoodsInfo();
+        request.setAttribute("listgoods",list);
+        request.getRequestDispatcher("commodity.jsp").forward(request,response);
+    }
+
+    protected void details(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        String goods_id=request.getParameter("goods_id");
 
     }
 
