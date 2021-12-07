@@ -1,6 +1,8 @@
 package org.java.web;
 
+import org.java.entity.IpShoppingCart;
 import org.java.entity.UserInfo;
+import org.java.entity.UserShoppingCart;
 import org.java.service.UserService;
 import org.java.util.GetProperties;
 import org.java.util.HtmlText;
@@ -19,6 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import java.util.Properties;
 
 /***
@@ -185,12 +188,61 @@ public class UserServlet extends BaseServlet {
         }
 
     }
+
+    /**
+     * 登录成功之后需要加载的数据
+     * @param request
+     * @param response
+     * @param md5Email
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void getShoppingCartCount(HttpServletRequest request,HttpServletResponse response,String md5Email)throws ServletException, IOException{
         //获得前台的ip地址
         String remoteAddr = request.getRemoteAddr();
         System.out.println(remoteAddr);
         //先根据ip地址查询购物车中是否存在数据
         int count = userService.getIpShoppingCartCount(remoteAddr);
+        if (count>0){
+//            System.out.println("panduan shibushi 0");
+            UserInfo user= (UserInfo) request.getSession().getAttribute("user");
+            System.out.println("session:"+user.getUserEmail());
+            //表示有数据,在把IP购物车中的数据取出来，存到用户数据表中
+            List<IpShoppingCart> list = userService.getIpShoppingCartByIp(remoteAddr);
+            //根据用户邮箱，判断用户购物车是否存在信息
+            int userShoppingCartCount = userService.getUserShoppingCartCount(user.getUserEmail());
+            if (userShoppingCartCount>0){
+                //把用户购物车信息找出来
+                List<UserShoppingCart> userList = userService.getUserShoppingCartByUserId(user.getUserEmail());
+                System.out.println("userList"+userList);
+                    System.out.println("userList!=null");
+                    //如果不为空，循环遍历ip购物车的信息
+                    for (IpShoppingCart ipShoppingCart : list) {
+                        System.out.println(ipShoppingCart.getGoodsId());
+                        System.out.println("IpShoppingCart ipShoppingCart : list");
+                        //外层循环一次，内层循环多次，去判断用户购物车中是否有跟ip购物车相同的商品id
+                        for (UserShoppingCart userShoppingCart : userList) {
+                            if (ipShoppingCart.getGoodsId().equals(userShoppingCart.getGoodsId())){
+                                System.out.println("ipShoppingCart.getGoodsId().equals(userShoppingCart.getGoodsId())");
+                                //判断，存在相同的商品信息id，在对应的商品信息id的基础上，把数量加1
+                                userService.updateUserShoppingCartGoodsNumByUserEmail(user.getUserEmail(),ipShoppingCart.getGoodsNum());
+                            }else {
+                                //如果不存在，那么就根据用户id添加对应的商品信息
+                                userService.addUserShoppingCart(user.getUserEmail(),ipShoppingCart.getGoodsId(),1);
+                            }
+                        }
+                    }
+            }else {
+                System.out.println("jinlaile");
+                for (IpShoppingCart ipShoppingCart : list) {
+                    System.out.println("jinlaileaaaaaaaaaaaaaaaaaa");
+                    userService.addUserShoppingCart(user.getUserEmail(),ipShoppingCart.getGoodsId(),1);
+                }
+            }
+            //上面的都执行完成，删除ip购物车中的数据
+            userService.delIpShoppingCartByIp(remoteAddr);
+
+        }
         //登录成功之后去加载购物车内的总数
         int cou = userService.getUserShoppingCartCount(md5Email);
         System.out.println(cou);
@@ -198,22 +250,23 @@ public class UserServlet extends BaseServlet {
         Cookie cookie=new Cookie("cou",String.valueOf(cou) );
         cookie.setMaxAge(60*3600);
         response.addCookie(cookie);
-
     }
 
     /**
      * 用户退出登录
      * @param request
      * @param response
-     * @param md5Email
+     *
      * @throws ServletException
      * @throws IOException
      */
-//    protected void logOut(HttpServletRequest request,HttpServletResponse response,String md5Email)throws ServletException, IOException {
-//        request.getSession().removeAttribute("user");
+    protected void logOut(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
+        request.getSession().removeAttribute("user");
+        System.out.println("删除成功");
 //        Cookie[] cookies = request.getCookies();
 //        for (int i = 0; i < cookies.length; i++) {
 //            String name = cookies[i].getName();
+//            System.out.println(name);
 //        }
-//    }
+    }
 }

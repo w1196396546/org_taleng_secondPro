@@ -1,10 +1,14 @@
 package org.java.service.impl;
 
 import org.java.dao.UserMapper;
+import org.java.entity.IpShoppingCart;
 import org.java.entity.UserInfo;
+import org.java.entity.UserShoppingCart;
 import org.java.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {
@@ -46,5 +50,32 @@ public class UserServiceImpl implements UserService {
     public int getUserShoppingCartCount(String email) {
         int count = userMapper.getUserShoppingCartCount(email);
         return count;
+    }
+
+    @Override
+    public List<IpShoppingCart> getIpShoppingCartByIp(String ip) {
+        List<IpShoppingCart> list = userMapper.getIpShoppingCartByIp(ip);
+        return list;
+    }
+
+    @Override
+    public List<UserShoppingCart> getUserShoppingCartByUserId(String userId) {
+        List<UserShoppingCart> userList = userMapper.getUserShoppingCartByUserId(userId);
+        return userList;
+    }
+
+    @Override
+    public void updateUserShoppingCartGoodsNumByUserEmail(String email,Integer num) {
+        userMapper.updateUserShoppingCartGoodsNumByUserEmail(email,num);
+    }
+
+    @Override
+    public void addUserShoppingCart(String email, String goodsId, Integer goodsNum) {
+        userMapper.addUserShoppingCart(email,goodsId,goodsNum);
+    }
+
+    @Override
+    public void delIpShoppingCartByIp(String ip) {
+        userMapper.delIpShoppingCartByIp(ip);
     }
 }

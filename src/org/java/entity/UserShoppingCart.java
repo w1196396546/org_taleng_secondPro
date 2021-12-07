@@ -1,31 +1,29 @@
 package org.java.entity;
 
-import java.io.Serializable;
+public class UserShoppingCart {
 
-public class IpShoppingCart implements Serializable {
+    private String userShoppingId;
 
-    private String ipId;
-
-    private String ip;
+    private String userId;
 
     private String goodsId;
 
     private Integer goodsNum;
 
-    public String getIpId() {
-        return ipId;
+    public String getUserShoppingId() {
+        return userShoppingId;
     }
 
-    public void setIpId(String ipId) {
-        this.ipId = ipId;
+    public void setUserShoppingId(String userShoppingId) {
+        this.userShoppingId = userShoppingId;
     }
 
-    public String getIp() {
-        return ip;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setIp(String ip) {
-        this.ip = ip;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getGoodsId() {

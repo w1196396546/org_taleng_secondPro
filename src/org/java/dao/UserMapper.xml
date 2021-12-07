@@ -18,11 +18,33 @@
     </update>
 
     <select id="getUserShoppingCartCount" resultType="int">
-        select count(*) from usershoppingcart where user_id=#{email}
+        select count(*) from usershoppingcart where user_email=#{email}
     </select>
 
 
     <select id="getIpShoppingCartCount" resultType="int">
         select count(*) from ipshoppingcart where ip=#{ip}
     </select>
+
+    <select id="getIpShoppingCartByIp" resultType="ipShoppingCart">
+        select ip_id ipId,ip,goods_id goodsId,goods_num goodsNum from ipshoppingcart where ip=#{ip}
+    </select>
+
+    <select id="getUserShoppingCartByUserId" resultType="userShoppingCart">
+        select user_shopping_id userShoppingId,user_email userId,
+               goods_id goodsId,goods_num goodsNum
+               from usershoppingcart where user_email=#{userId}
+    </select>
+
+    <update id="updateUserShoppingCartGoodsNumByUserEmail">
+        update usershoppingcart set goods_num=goods_num+#{num} where user_email=#{email}
+    </update>
+
+    <insert id="addUserShoppingCart">
+        insert into usershoppingcart values(uuid(),#{email},#{goodsId},#{goodsNum})
+    </insert>
+
+    <update id="delIpShoppingCartByIp">
+        delete from ipshoppingcart where ip=#{ip}
+    </update>
 </mapper>
