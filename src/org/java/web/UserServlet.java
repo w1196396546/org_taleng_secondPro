@@ -266,6 +266,7 @@ public class UserServlet extends BaseServlet {
      */
     protected void logOut(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
         request.getSession().removeAttribute("user");
+        request.getSession().removeAttribute("goodsInfoList");
         response.sendRedirect("index.jsp");
     }
 
@@ -277,6 +278,7 @@ public class UserServlet extends BaseServlet {
      * @throws IOException
      */
     protected void userShoppingCart(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
+        request.getSession().removeAttribute("goodsInfoList");
         System.out.println("come,userShoppingCart");
         String userEmail = request.getParameter("userEmail");
         System.out.println(userEmail);
@@ -292,7 +294,7 @@ public class UserServlet extends BaseServlet {
             }
         }
         response.sendRedirect("shopcart.jsp");
-//        System.out.println(goodsInfoList.toString());
+        System.out.println(goodsInfoList.toString());
 //                String json = JSON.toJSONString(goodsInfoList);
 //                System.out.println(json);
 //                response.setCharacterEncoding("utf-8");
@@ -301,5 +303,12 @@ public class UserServlet extends BaseServlet {
 //                out.write(json);
 //                out.flush();
 //                out.close();
+    }
+
+    protected void lessGoodsNum(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
+        System.out.println("abc");
+        String goodsId = request.getParameter("goodsId");
+        Integer goodsNum = Integer.valueOf(request.getParameter("goodsNum"));
+
     }
 }

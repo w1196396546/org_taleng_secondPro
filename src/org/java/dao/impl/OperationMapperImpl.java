@@ -3,6 +3,7 @@ package org.java.dao.impl;
 import org.java.dao.OperationMapper;
 import org.java.entity.GoodsInfo;
 import org.java.entity.IpShoppingCart;
+import org.java.entity.UserCart;
 import org.java.util.JdbcUtil;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -31,7 +32,7 @@ public class OperationMapperImpl implements OperationMapper {
     }
 
     @Override
-    public List<GoodsInfo> getAllIpShoppingCartContent(String goodsId) {
+    public List<UserCart> getAllIpShoppingCartContent(String goodsId, String ip) {
         return null;
     }
 }

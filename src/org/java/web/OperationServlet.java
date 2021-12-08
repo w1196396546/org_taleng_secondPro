@@ -1,9 +1,11 @@
 package org.java.web;
 
+import com.alibaba.fastjson.JSON;
 import org.java.dao.OperationMapper;
 import org.java.dao.impl.OperationMapperImpl;
 import org.java.entity.GoodsInfo;
 import org.java.entity.IpShoppingCart;
+import org.java.entity.UserCart;
 import org.java.service.OperationService;
 import org.java.service.UserService;
 import org.springframework.context.ApplicationContext;
@@ -15,6 +17,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 /**
@@ -48,21 +51,32 @@ public class OperationServlet extends BaseServlet {
      * @throws IOException
      */
     protected void showIpShoppingCart(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-                //获得访问页面用户的ip地址
+        request.getSession().removeAttribute("goodsInfoList");
+        //获得访问页面用户的ip地址
                 String remoteAddr = request.getRemoteAddr();
                 System.out.println(remoteAddr);
         int count = operationService.getIpShoppingCartCount(remoteAddr);
         System.out.println(count);
+        List<UserCart> goodsInfoList =null;
         if (count>0){
             //代表IP购物车存在数据
             List<IpShoppingCart> list = operationService.getIpShoppingCartByIp(remoteAddr);
             for (IpShoppingCart ipShoppingCart : list) {
                 System.out.println(ipShoppingCart.getGoodsId());
-                List<GoodsInfo> goodsInfoList = operationService.getAllIpShoppingCartContent(ipShoppingCart.getGoodsId());
-                request.setAttribute("goodsInfoList",goodsInfoList);
+                 goodsInfoList = operationService.getAllIpShoppingCartContent(ipShoppingCart.getGoodsId(),remoteAddr);
+                request.getSession().setAttribute("goodsInfoList",goodsInfoList);
             }
         }
-        request.getRequestDispatcher("shopcart.jsp").forward(request,response);
+        response.sendRedirect("shopcart.jsp");
+//        request.getRequestDispatcher("shopcart.jsp").forward(request,response);
+//            String json = JSON.toJSONString(goodsInfoList);
+//            System.out.println(json);
+//            response.setCharacterEncoding("utf-8");
+//            response.setContentType("text/html;charset=utf-8");
+//            PrintWriter out = response.getWriter();
+//            out.write(json);
+//            out.flush();
+//            out.close();
 
     }
 

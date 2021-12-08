@@ -12,18 +12,36 @@
 </head>
 <body>
 
-<div class="site-nav-bg">
-    <div class="site-nav w1200">
-        <p class="sn-back-home">
-            <i class="layui-icon layui-icon-home"></i>
-            <a href="#">首页</a>
-        </p>
-        <div class="sn-quick-menu">
-            <div class="login"><a href="login.jsp">登录</a></div>
-            <div class="sp-cart"><a href="../shopcart.jsp">购物车</a><span>2</span></div>
+<c:if test="${sessionScope.user==null}">
+    <div class="site-nav-bg">
+        <div class="site-nav w1200">
+            <p class="sn-back-home">
+                <i class="layui-icon layui-icon-home"></i>
+                <a href="#">首页</a>
+            </p>
+            <div class="sn-quick-menu">
+                <div class="login"><a href="user/login.jsp">登录</a></div>
+                <div class="sp-cart"><a href="shopcart.jsp">购物车</a><span>2</span></div>
+            </div>
         </div>
     </div>
-</div>
+</c:if>
+<c:if test="${sessionScope.user!=null}">
+    <div class="site-nav-bg">
+        <div class="site-nav w1200">
+            <p class="sn-back-home">
+                <i class="layui-icon layui-icon-home"></i>
+                <a href="#">首页</a>
+            </p>
+            <div class="sn-quick-menu">
+                <div class="login"><a href="user/userCenter.jsp">用户中心</a></div>
+                <div class="sp-cart"><a href="user?method=userShoppingCart&userEmail=${sessionScope.user.userEmail}">购物车</a><span>${cookie.cou.value}</span></div>
+                <div class="login" style="margin-left: 15px;"><a href="user?method=logOut">退出登录</a></div>
+            </div>
+
+        </div>
+    </div>
+</c:if>
 
 
 

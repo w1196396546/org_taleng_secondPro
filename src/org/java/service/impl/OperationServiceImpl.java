@@ -3,6 +3,7 @@ package org.java.service.impl;
 import org.java.dao.OperationMapper;
 import org.java.entity.GoodsInfo;
 import org.java.entity.IpShoppingCart;
+import org.java.entity.UserCart;
 import org.java.service.OperationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,8 +27,8 @@ public class OperationServiceImpl implements OperationService {
     }
 
     @Override
-    public List<GoodsInfo> getAllIpShoppingCartContent(String goodsId) {
-        List<GoodsInfo> ipGoodsList = operationMapper.getAllIpShoppingCartContent(goodsId);
+    public List<UserCart> getAllIpShoppingCartContent(String goodsId, String ip) {
+        List<UserCart> ipGoodsList = operationMapper.getAllIpShoppingCartContent(goodsId,ip);
         return ipGoodsList;
     }
 }

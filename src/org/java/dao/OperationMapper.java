@@ -3,6 +3,7 @@ package org.java.dao;
 import org.apache.ibatis.annotations.Param;
 import org.java.entity.GoodsInfo;
 import org.java.entity.IpShoppingCart;
+import org.java.entity.UserCart;
 
 import java.util.List;
 
@@ -16,6 +17,6 @@ public interface OperationMapper {
     List<IpShoppingCart> getIpShoppingCartByIp(@Param("ip") String ip);
 
     //根据商品id，查询出所有的ip购物车中的数据
-    List<GoodsInfo> getAllIpShoppingCartContent(@Param("goodsId") String goodsId);
+    List<UserCart> getAllIpShoppingCartContent(@Param("goodsId") String goodsId, @Param("ip")String ip);
 
 }

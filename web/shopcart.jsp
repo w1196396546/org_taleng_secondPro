@@ -7,8 +7,13 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="../res/static/css/main.css">
   <link rel="stylesheet" type="text/css" href="../res/layui/css/layui.css">
+<%--  <link rel="stylesheet" type="text/css" href="css/jquery.my-modal.1.1.winStyle.css">--%>
   <script type="text/javascript" src="../res/layui/layui.js"></script>
   <script src="js/vue-2.4.0.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/axios.min.js"></script>
+<%--  <script src="js/jquery.my-modal.1.1.min.js"></script>--%>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 </head>
@@ -37,7 +42,7 @@
       </p>
       <div class="sn-quick-menu">
         <div class="login"><a href="user/userCenter.jsp">用户中心</a></div>
-        <div class="sp-cart"><a href="user?method=userShoppingCart&userEmail=${cookie.user.value}">购物车</a><span>${cookie.cou.value}</span></div>
+        <div class="sp-cart"><a href="user?method=userShoppingCart&userEmail=${sessionScope.user.userEmail}">购物车</a><span>${cookie.cou.value}</span></div>
         <div class="login" style="margin-left: 15px;"><a href="user?method=logOut">退出登录</a></div>
       </div>
 
@@ -123,7 +128,25 @@
       </div>
       <div class="OrderList" id="app">
         <div class="order-content" id="list-cont">
+          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button>
+          <!-- 模态框（Modal） -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+                </div>
+                <div class="modal-body">在这里添加一些文本</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                  <button type="button" class="btn btn-primary">提交更改</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+          </div>
           <c:set var="money" value="0"/>
+
           <c:forEach items="${goodsInfoList}" var="goodsInfo">
             <ul class="item-content layui-clear">
               <li class="th th-chk">
@@ -147,9 +170,26 @@
               </li>
               <li class="th th-amount">
                 <div class="box-btn layui-clear">
-                  <div class="less layui-btn">-</div>
+                  <c:if test="${sessionScope.user!=null}">
+                    <a id="lessa" href="javascript:void(0)"><div class="layui-btn" id="lessDiv">-</div></a>
+<%--                    <a class="layui-btn" href="user?method=lessGoodsNum&goodsId=${goodsInfo.goods_id}" id="lessa">-</a>--%>
+
+                    <script>
+                    $(function () {
+                      $("#lessa").click(function () {
+                        var num=$(".Quantity-input").val();
+                        if (num<=1){
+                          alert("123121")
+                          return;
+                        }else {
+                          $(this).attr("href","user?method=lessGoodsNum&goodsId=${goodsInfo.goods_id}");
+                        }
+                      });
+                    })
+                  </script>
+                  </c:if>
                   <input class="Quantity-input" type="" name="" value="${goodsInfo.goods_num}" disabled="disabled">
-                  <div class="add layui-btn">+</div>
+                  <div class="layui-btn">+</div>
                 </div>
               </li>
               <li class="th th-sum">
@@ -260,46 +300,84 @@
       </div>
     </div>
   </div>
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/jquery.cookie.js"></script>
-<script src="js/axios.min.js"></script>
+
 <script>
-    // alert(1)
+    // // alert(1)
     // var name=$.cookie("user");
-    // var vue=new Vue({
-    //   el:'#app',
-    //   data:{
+    // if (name!=""){
+    //   var vue=new Vue({
+    //     el:'#app',
+    //     data:{
     //       msg:"asd",
     //       list:[]
-    //   },
-    //   methods:{
-    //     init(){
-    //       let _this=this;
-    //       alert("进入初始化方法")
-    //       $.ajax({
-    //         url:"user",
-    //         type:"post",
-    //         data: {"method":"userShoppingCart","userEmail":name},
-    //         dataType:"json",
-    //         success:function (data){
-    //           _this.list=data;
-    //           $.each(_this.list,function (index,k) {
-    //             alert(k.goods_imgaddr)
-    //           })
-    //         }
-    //       })
+    //     },
+    //     methods:{
+    //       init(){
+    //         let _this=this;
+    //         // alert("进入初始化方法")
+    //         $.ajax({
+    //           url:"user",
+    //           type:"post",
+    //           data: {"method":"userShoppingCart","userEmail":name},
+    //           dataType:"json",
+    //           success:function (data){
+    //             _this.list=data;
+    //             $.each(_this.list,function (index,k) {
+    //               alert(k.goods_imgaddr)
+    //             })
+    //           }
+    //         })
+    //       }
+    //     },
+    //     created(){
+    //       // alert("钩子函数")
+    //       this.init();
+    //     },
+    //     filter:{
+    //       conversionPrice(price){
+    //         var p=parseInt(price);
+    //         return p;
+    //       }
     //     }
-    //   },
-    //   created(){
-    //     this.init();
-    //   },
-    //   filter:{
-    //     conversionPrice(price){
-    //       var p=parseInt(price);
-    //       return p;
+    //   });
+    // }else {
+    //   var vue=new Vue({
+    //     el:'#app',
+    //     data:{
+    //       msg:"asd",
+    //       list:[]
+    //     },
+    //     methods:{
+    //       init(){
+    //         alert("cookie没有值的购物车")
+    //         let _this=this;
+    //         alert("进入初始化方法")
+    //         $.ajax({
+    //           url:"operation",
+    //           type:"post",
+    //           data: {"method":"showIpShoppingCart"},
+    //           dataType:"json",
+    //           success:function (data){
+    //             _this.list=data;
+    //             $.each(_this.list,function (index,k) {
+    //               alert(k.goods_imgaddr)
+    //             })
+    //           }
+    //         })
+    //       }
+    //     },
+    //     created(){
+    //       this.init();
+    //     },
+    //     filter:{
+    //       conversionPrice(price){
+    //         var p=parseInt(price);
+    //         return p;
+    //       }
     //     }
-    //   }
-    // });
+    //   });
+    // }
+
 </script>
 <script type="text/javascript">
   layui.config({

@@ -80,6 +80,11 @@
 
                 </div>
               </div>
+<%--              <div class="layui-inline veri-code">--%>
+<%--                <div class="layui-input-inline">--%>
+<%--                  <input id="check" type="checkbox" value="yes" checked/>记住密码--%>
+<%--                </div>--%>
+<%--              </div>--%>
               <div style="height: 30px;color: red">${requestScope.error}</div>
             </div>
             <div class="layui-form-item login-btn">
