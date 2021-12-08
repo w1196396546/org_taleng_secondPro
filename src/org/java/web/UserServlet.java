@@ -1,10 +1,7 @@
 package org.java.web;
 
 import com.alibaba.fastjson.JSON;
-import org.java.entity.GoodsInfo;
-import org.java.entity.IpShoppingCart;
-import org.java.entity.UserInfo;
-import org.java.entity.UserShoppingCart;
+import org.java.entity.*;
 import org.java.service.UserService;
 import org.java.util.GetProperties;
 import org.java.util.HtmlText;
@@ -251,6 +248,7 @@ public class UserServlet extends BaseServlet {
         }
         //登录成功之后去加载购物车内的总数
         int cou = userService.getUserShoppingCartCount(md5Email);
+
         System.out.println(cou);
 //        request.getSession().setAttribute("cou",cou);
         Cookie cookie=new Cookie("cou",String.valueOf(cou) );
@@ -282,18 +280,18 @@ public class UserServlet extends BaseServlet {
         System.out.println("come,userShoppingCart");
         String userEmail = request.getParameter("userEmail");
         System.out.println(userEmail);
-        List<GoodsInfo> goodsInfoList=null;
+        List<UserCart> goodsInfoList=null;
         int count = userService.getUserShoppingCartCount(userEmail);
         if (count>0){
             List<UserShoppingCart> list = userService.getUserShoppingCartByUserId(userEmail);
             for (UserShoppingCart userShoppingCart : list) {
                 String goodsId = userShoppingCart.getGoodsId();
-                goodsInfoList = userService.getAllUserShoppingCartContent(goodsId);
-
-                request.setAttribute("goodsInfoList",goodsInfoList);
+                goodsInfoList = userService.getAllUserShoppingCartContent(goodsId,userEmail);
+//                request.setAttribute("goodsNum",userShoppingCart.getGoodsNum());
+                request.getSession().setAttribute("goodsInfoList",goodsInfoList);
             }
         }
-        request.getRequestDispatcher("shopcart.jsp").forward(request,response);
+        response.sendRedirect("shopcart.jsp");
 //        System.out.println(goodsInfoList.toString());
 //                String json = JSON.toJSONString(goodsInfoList);
 //                System.out.println(json);

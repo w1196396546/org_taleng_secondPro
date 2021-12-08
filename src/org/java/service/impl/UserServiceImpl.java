@@ -1,10 +1,7 @@
 package org.java.service.impl;
 
 import org.java.dao.UserMapper;
-import org.java.entity.GoodsInfo;
-import org.java.entity.IpShoppingCart;
-import org.java.entity.UserInfo;
-import org.java.entity.UserShoppingCart;
+import org.java.entity.*;
 import org.java.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -67,6 +64,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateUserShoppingCartGoodsNumByUserEmail(String email,Integer num) {
+        System.out.println(email);
         userMapper.updateUserShoppingCartGoodsNumByUserEmail(email,num);
     }
 
@@ -81,8 +79,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<GoodsInfo> getAllUserShoppingCartContent(String goodId) {
-        List<GoodsInfo> list = userMapper.getAllUserShoppingCartContent(goodId);
+    public List<UserCart> getAllUserShoppingCartContent(String goodId,String email) {
+        List<UserCart> list = userMapper.getAllUserShoppingCartContent(goodId,email);
         return list;
     }
 }

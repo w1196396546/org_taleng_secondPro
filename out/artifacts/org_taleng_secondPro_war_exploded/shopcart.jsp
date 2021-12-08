@@ -123,6 +123,7 @@
       </div>
       <div class="OrderList" id="app">
         <div class="order-content" id="list-cont">
+          <c:set var="money" value="0"/>
           <c:forEach items="${goodsInfoList}" var="goodsInfo">
             <ul class="item-content layui-clear">
               <li class="th th-chk">
@@ -147,7 +148,7 @@
               <li class="th th-amount">
                 <div class="box-btn layui-clear">
                   <div class="less layui-btn">-</div>
-                  <input class="Quantity-input" type="" name="" value="1" disabled="disabled">
+                  <input class="Quantity-input" type="" name="" value="${goodsInfo.goods_num}" disabled="disabled">
                   <div class="add layui-btn">+</div>
                 </div>
               </li>
@@ -158,6 +159,7 @@
                 <span class="dele-btn">删除</span>
               </li>
             </ul>
+            <c:set var="money" value="${money+goodsInfo.goods_price*goodsInfo.goods_num}"/>
           </c:forEach>
 <%--            <ul class="item-content layui-clear" v-for="(item,index) in list" :key="index">--%>
 <%--              <li class="th th-chk">--%>

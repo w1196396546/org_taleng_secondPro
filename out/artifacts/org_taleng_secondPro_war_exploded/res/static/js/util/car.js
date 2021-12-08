@@ -17,9 +17,11 @@ var car = {
       var batchdeletion = document.getElementsByClassName('batch-deletion')[0]//批量删除按钮
       //计算
       function getTotal(){
-          var seleted = 0,price = 0;
+          var seleted = 0,price = 0,count=0;
           for(var i = 0; i < uls.length;i++){
+              console.log(i)
         			if(uls[i].getElementsByTagName('input')[0].checked){
+        			    // count=count+(parseInt(uls[i].getElementsByClassName('Quantity-input')[0].value)*parseFloat(uls[i].getElementsByClassName('sum')[0].innerHTML));
                 seleted += parseInt(uls[i].getElementsByClassName('Quantity-input')[0].value);
                 price += parseFloat(uls[i].getElementsByClassName('sum')[0].innerHTML);
               }

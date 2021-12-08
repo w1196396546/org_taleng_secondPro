@@ -10,80 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/src/org/java/dao/OperationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/java/service/OperationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/java/service/impl/OperationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.13.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/axios.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/jquery.cookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/java/entity/UserCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_22__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_22__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_22__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_22__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_29__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_29__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_29__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_29__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_40__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_40__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_40__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-12-7_0007__4_40__Default_Changelist_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_12_7_16_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_12_7_16_05__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/InitMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/LoggingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/OperationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/RegisterMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/druid.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/InitMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/LoggingMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/OperationMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/dao/impl/UserMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/entity/UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/RegisterService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/impl/RegisterSerivceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/GetProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/HtmlText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/JavaMailUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/JdbcUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/util/MD5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/BaseServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/InitServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/LoggingServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/OperationServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/RegisterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/UserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/shopcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/shopcart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/InitMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/LoggingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/OperationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/RegisterMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/InitMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/LoggingMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/OperationMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/dao/impl/UserMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/entity/UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/RegisterService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/impl/RegisterSerivceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/GetProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/HtmlText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/JavaMailUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/JdbcUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/util/MD5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/BaseServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/InitServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/LoggingServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/OperationServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/RegisterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/UserServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/OperationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/OperationMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/java/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/java/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/java/dao/impl/OperationMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/dao/impl/OperationMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/java/web/OperationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/OperationServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/res/static/js/util/car.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/res/static/js/util/car.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/shopcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/shopcart.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -646,11 +592,12 @@
       <recent name="E:\idea项目\第二次项目\org_taleng_secondPro\web\user" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.java.entity" />
       <recent name="org.java.util" />
       <recent name="org.java.web" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.71">
+  <component name="RunManager" selected="JUnit.MD5">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.java.demo.Demo" />
       <module name="org_taleng_secondPro" />
@@ -890,17 +837,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Demo" />
       <item itemvalue="JUnit.MD5" />
       <item itemvalue="JUnit.MD5.MD5Email" />
       <item itemvalue="JUnit.Demo.showGoodsInfo" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.71" />
-      <item itemvalue="Tomcat Server.tomcat" />
+      <item itemvalue="Tomcat 服务器.Tomcat 8.5.71" />
+      <item itemvalue="Tomcat 服务器.tomcat" />
+      <item itemvalue="应用程序.Demo" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Demo.showGoodsInfo" />
-        <item itemvalue="Application.Demo" />
         <item itemvalue="JUnit.MD5.MD5Email" />
         <item itemvalue="JUnit.MD5" />
       </list>
@@ -943,6 +889,7 @@
       <workItem from="1638865231470" duration="729000" />
       <workItem from="1638878453187" duration="3000" />
       <workItem from="1638878582140" duration="138000" />
+      <workItem from="1638880825768" duration="5352000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Message">
       <created>1638616423338</created>

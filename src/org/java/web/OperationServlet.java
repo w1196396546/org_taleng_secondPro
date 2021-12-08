@@ -57,6 +57,7 @@ public class OperationServlet extends BaseServlet {
             //代表IP购物车存在数据
             List<IpShoppingCart> list = operationService.getIpShoppingCartByIp(remoteAddr);
             for (IpShoppingCart ipShoppingCart : list) {
+                System.out.println(ipShoppingCart.getGoodsId());
                 List<GoodsInfo> goodsInfoList = operationService.getAllIpShoppingCartContent(ipShoppingCart.getGoodsId());
                 request.setAttribute("goodsInfoList",goodsInfoList);
             }

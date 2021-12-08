@@ -37,7 +37,7 @@
     </select>
 
     <update id="updateUserShoppingCartGoodsNumByUserEmail">
-        update usershoppingcart set goods_num=goods_num+#{num} where user_email=#{email}
+        update usershoppingcart set goods_num=goods_num+#{num} where user_email=#{userEmail}
     </update>
 
     <insert id="addUserShoppingCart">
@@ -48,7 +48,9 @@
         delete from ipshoppingcart where ip=#{ip}
     </update>
 
-    <select id="getAllUserShoppingCartContent" resultType="goodsInfo">
-        select * from goods where goods_id=#{goodsId}
+    <select id="getAllUserShoppingCartContent" resultType="userCart">
+        SELECT goods.*,usershoppingcart.`goods_num` FROM
+    goods,usershoppingcart WHERE
+goods.goods_id=#{goodsId} AND user_email=#{userEmail}
     </select>
 </mapper>
