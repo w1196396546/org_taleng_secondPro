@@ -99,7 +99,7 @@
                 </form>
                 <div class="layui-inline veri-code">
                     <div class="layui-input-inline" >
-                        <a href="?method=backPwd">忘记密码</a>
+                        <a href="../user/backPwd.jsp">忘记密码</a>
                         <a href="register.jsp" style="margin-left: 180px;">用户注册</a>
                     </div>
                 </div>

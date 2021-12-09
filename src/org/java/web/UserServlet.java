@@ -182,7 +182,9 @@ public class UserServlet extends BaseServlet {
             System.out.println("cookie的email"+user.getUserEmail());
             cookie.setMaxAge(60*30);
             response.addCookie(cookie);
+//            getShoppingCartCount(request,response,md5Email);
             getShoppingCartCount(request,response,md5Email);
+//            System.out.println("youmeiyou jinru gouwuchedefangfa ");
             request.getRequestDispatcher("index.jsp").forward(request, response);
         }else {
             System.out.println("ssss");
@@ -201,33 +203,39 @@ public class UserServlet extends BaseServlet {
      * @throws IOException
      */
     protected void getShoppingCartCount(HttpServletRequest request,HttpServletResponse response,String md5Email)throws ServletException, IOException{
+        System.out.println("youmeiyoujinru zhege fangfa");
         //获得前台的ip地址
         String remoteAddr = request.getRemoteAddr();
         System.out.println(remoteAddr);
         //先根据ip地址查询购物车中是否存在数据
         int count = userService.getIpShoppingCartCount(remoteAddr);
         if (count>0){
-//            System.out.println("panduan shibushi 0");
+            //定义两个map集合，用于存放IP购物车与用户购物车中的数据
+            Map<String,Integer> ipMap = new HashMap<>();
+
+            System.out.println("panduan shibushi 0");
             UserInfo user= (UserInfo) request.getSession().getAttribute("user");
-            System.out.println("session:"+user.getUserEmail());
+//            System.out.println("session:"+user.getUserEmail());
             //表示有数据,在把IP购物车中的数据取出来，存到用户数据表中
             List<IpShoppingCart> list = userService.getIpShoppingCartByIp(remoteAddr);
+            for (int i = 0; i < list.size(); i++) {
+                IpShoppingCart ipShoppingCart = list.get(i);
+                int goodsNum=ipShoppingCart.getGoodsNum();
+//                System.out.println("ipMap:values:"+goodsNum);
+                ipMap.put(ipShoppingCart.getGoodsId(),goodsNum);
+            }
+            list.forEach(k-> System.out.println(k.getGoodsId()));
             //根据用户邮箱，判断用户购物车是否存在信息
             int userShoppingCartCount = userService.getUserShoppingCartCount(user.getUserEmail());
             if (userShoppingCartCount>0){
-                //定义两个map集合，用于存放IP购物车与用户购物车中的数据
-                Map<String,Integer> ipMap = new HashMap<>();
+                //如果用户信息不为0，就要map集合
                 Map<String,UserShoppingCart> userMap=new HashMap<>();
                 //把用户购物车信息找出来
                 List<UserShoppingCart> userList = userService.getUserShoppingCartByUserId(user.getUserEmail());
                 System.out.println("userList"+userList);
                     System.out.println("userList!=null");
                     //如果不为空，循环遍历ip购物车的信息
-                for (int i = 0; i < list.size(); i++) {
-                    IpShoppingCart ipShoppingCart = list.get(i);
-                    System.out.println("ipMap:values:"+ipShoppingCart.getGoodsNum());
-                    ipMap.put(ipShoppingCart.getGoodsId(),ipShoppingCart.getGoodsNum());
-                }
+
                 for (int i = 0; i < userList.size(); i++) {
                     UserShoppingCart userShoppingCart = userList.get(i);
                     userMap.put(userShoppingCart.getGoodsId(),userShoppingCart);
@@ -237,16 +245,27 @@ public class UserServlet extends BaseServlet {
                     boolean flag = userMap.containsKey(s);
                     if (flag){
                         Integer integer = ipMap.get(s);
-                        System.out.println("integer:value"+integer);
+//                        System.out.println("integer:value"+integer);
                         userService.updateUserShoppingCartGoodsNumByUserEmail(user.getUserEmail(),integer);
                         break;
 
                     }else {
                         Integer cou=ipMap.get(s);
-                        System.out.println("cou:value"+cou);
+//                        System.out.println("cou:value"+cou);
                         userService.addUserShoppingCart(user.getUserEmail(),s,cou);
                         break;
                     }
+                }
+            }else {
+//                System.out.println("xiaoyu：eaor");
+//                System.out.println(user.getUserEmail());
+                Set<String> keys = ipMap.keySet();
+//                System.out.println(keys.size());
+                for (String key : keys) {
+                    System.out.println(key);
+                    int value=ipMap.get(key);
+//                    System.out.println("ipMap value:"+value);
+                    userService.addUserShoppingCart(user.getUserEmail(),key,value);
                 }
             }
             //上面的都执行完成，删除ip购物车中的数据
@@ -256,7 +275,7 @@ public class UserServlet extends BaseServlet {
         //登录成功之后去加载购物车内的总数
         int cou = userService.getUserShoppingCartCount(md5Email);
 
-        System.out.println(cou);
+//        System.out.println(cou);
 //        request.getSession().setAttribute("cou",cou);
         Cookie cookie=new Cookie("cou",String.valueOf(cou) );
         cookie.setMaxAge(60*3600);
@@ -289,23 +308,20 @@ public class UserServlet extends BaseServlet {
         System.out.println("come,userShoppingCart");
         String userEmail = request.getParameter("userEmail");
         System.out.println(userEmail);
-        List<UserCart> goodsInfoList=null;
+        List<UserCart> goodsInfoList=new ArrayList<>();;
         int count = userService.getUserShoppingCartCount(userEmail);
         if (count>0){
-            goodsInfoList=new ArrayList<>();
             List<UserShoppingCart> list = userService.getUserShoppingCartByUserId(userEmail);
             for (UserShoppingCart userShoppingCart : list) {
                 String goodsId = userShoppingCart.getGoodsId();
                 UserCart userCart = userService.getAllUserShoppingCartContent(goodsId, userEmail);
                 goodsInfoList.add(userCart);
-//                request.setAttribute("goodsNum",userShoppingCart.getGoodsNum());
-
             }
         }
-        goodsInfoList.forEach(k-> System.out.println(k.getGoods_intro()));
+//        goodsInfoList.forEach(k-> System.out.println(k.getGoods_intro()));
         request.getSession().setAttribute("goodsInfoList",goodsInfoList);
         response.sendRedirect("shopcart.jsp");
-        System.out.println(goodsInfoList.toString());
+//        System.out.println(goodsInfoList.toString());
 //                String json = JSON.toJSONString(goodsInfoList);
 //                System.out.println(json);
 //                response.setCharacterEncoding("utf-8");
