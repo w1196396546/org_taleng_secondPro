@@ -27,8 +27,18 @@ public class OperationServiceImpl implements OperationService {
     }
 
     @Override
-    public List<UserCart> getAllIpShoppingCartContent(String goodsId, String ip) {
-        List<UserCart> ipGoodsList = operationMapper.getAllIpShoppingCartContent(goodsId,ip);
+    public UserCart getAllIpShoppingCartContent(String goodsId, String ip) {
+        UserCart ipGoodsList = operationMapper.getAllIpShoppingCartContent(goodsId,ip);
         return ipGoodsList;
+    }
+
+    @Override
+    public void updateLessIpShoppingCartGoodsNum(String goodsId, String ip) {
+        operationMapper.updateLessIpShoppingCartGoodsNum(goodsId,ip);
+    }
+
+    @Override
+    public void updateAddIpShoppingCartGoodsNum(String goodsId, String ip) {
+        operationMapper.updateAddIpShoppingCartGoodsNum(goodsId, ip);
     }
 }

@@ -32,7 +32,17 @@ public class OperationMapperImpl implements OperationMapper {
     }
 
     @Override
-    public List<UserCart> getAllIpShoppingCartContent(String goodsId, String ip) {
+    public UserCart getAllIpShoppingCartContent(String goodsId, String ip) {
         return null;
+    }
+
+    @Override
+    public void updateLessIpShoppingCartGoodsNum(String GoodsId, String ip) {
+
+    }
+
+    @Override
+    public void updateAddIpShoppingCartGoodsNum(String goodsId, String ip) {
+
     }
 }

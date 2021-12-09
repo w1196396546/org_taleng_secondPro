@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -61,12 +62,14 @@ public class OperationServlet extends BaseServlet {
         if (count>0){
             //代表IP购物车存在数据
             List<IpShoppingCart> list = operationService.getIpShoppingCartByIp(remoteAddr);
+            goodsInfoList=new ArrayList<>();
             for (IpShoppingCart ipShoppingCart : list) {
                 System.out.println(ipShoppingCart.getGoodsId());
-                 goodsInfoList = operationService.getAllIpShoppingCartContent(ipShoppingCart.getGoodsId(),remoteAddr);
-                request.getSession().setAttribute("goodsInfoList",goodsInfoList);
+                UserCart userCart = operationService.getAllIpShoppingCartContent(ipShoppingCart.getGoodsId(), remoteAddr);
+                goodsInfoList.add(userCart);
             }
         }
+        request.getSession().setAttribute("goodsInfoList",goodsInfoList);
         response.sendRedirect("shopcart.jsp");
 //        request.getRequestDispatcher("shopcart.jsp").forward(request,response);
 //            String json = JSON.toJSONString(goodsInfoList);
@@ -79,6 +82,37 @@ public class OperationServlet extends BaseServlet {
 //            out.close();
 
     }
+    protected void shoppingIpCart(HttpServletRequest request, HttpServletResponse response,String remoteAddr) throws ServletException, IOException {
+        request.getSession().removeAttribute("goodsInfoList");
+        List<UserCart> goodsInfoList =new ArrayList<>();
+            //代表IP购物车存在数据
+            List<IpShoppingCart> list = operationService.getIpShoppingCartByIp(remoteAddr);
+            for (IpShoppingCart ipShoppingCart : list) {
+                System.out.println(1);
+                System.out.println(ipShoppingCart.getGoodsId());
+                UserCart userCart = operationService.getAllIpShoppingCartContent(ipShoppingCart.getGoodsId(), remoteAddr);
+                goodsInfoList.add(userCart);
+        }
+        request.getSession().setAttribute("goodsInfoList",goodsInfoList);
+        goodsInfoList.forEach(k-> System.out.println(k.getGoods_intro()));
 
+    }
+        protected void operationIpGoodsNum(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String ip = request.getRemoteAddr();
+        String goodsId = request.getParameter("goodsId");
+        System.out.println(ip+"  "+goodsId);
+        String type = request.getParameter("type");
+        System.out.println(type);
+        if (type.equals("l")){
+            //减少的操作
+            operationService.updateLessIpShoppingCartGoodsNum(goodsId,ip);
+        }else {
+            System.out.println("2342342");
+            //增加的操作
+            operationService.updateAddIpShoppingCartGoodsNum(goodsId,ip);
+        }
+            shoppingIpCart(request,response,ip);
+            response.sendRedirect("shopcart.jsp");
+    }
 
     }

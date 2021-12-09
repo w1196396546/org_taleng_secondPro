@@ -17,6 +17,11 @@ public interface OperationMapper {
     List<IpShoppingCart> getIpShoppingCartByIp(@Param("ip") String ip);
 
     //根据商品id，查询出所有的ip购物车中的数据
-    List<UserCart> getAllIpShoppingCartContent(@Param("goodsId") String goodsId, @Param("ip")String ip);
+    UserCart getAllIpShoppingCartContent(@Param("goodsId") String goodsId, @Param("ip")String ip);
 
+    //IP购物车的购物车数量减少
+    void updateLessIpShoppingCartGoodsNum(@Param("goodsId") String GoodsId,@Param("ip")String ip);
+
+    //IP购物车的购物车数量增加
+    void updateAddIpShoppingCartGoodsNum(@Param("goodsId") String goodsId,@Param("ip")String ip);
 }

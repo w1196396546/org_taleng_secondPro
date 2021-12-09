@@ -21,7 +21,7 @@
       </p>
       <div class="sn-quick-menu">
         <div class="login"><a href="user/login.jsp">登录</a></div>
-        <div class="sp-cart"><a href="shopcart.jsp">购物车</a><span>2</span></div>
+        <div class="sp-cart"><a href="operation?method=showIpShoppingCart">购物车</a><span>2</span></div>
       </div>
     </div>
   </div>

@@ -15,7 +15,7 @@
     <div class="login-bg">
         <div class="login-cont w1200">
             <div class="form-box">
-                <form class="layui-form" action="../user?method=setPwd&email=${requestScope.email}" method="post" onclick="return checkPwd()">
+                <form class="layui-form" action="../user?method=setPwd&email=${requestScope.email}" method="post" >
                     <legend>找回密码</legend>
                     <div class="layui-form-item">
                         <div class="layui-inline iphone">
@@ -34,7 +34,7 @@
                     </div>
                     <div class="layui-form-item login-btn">
                         <div class="layui-input-block">
-                            <button class="layui-btn" lay-submit="" lay-filter="demo1" >提交</button>
+                            <button class="layui-btn" lay-submit="" lay-filter="demo1" onclick="return checkPwd()">提交</button>
                         </div>
                     </div>
 
@@ -86,14 +86,15 @@
                 flag=false;
             }
         });
-        function checkPwd() {
-            if (flag==true){
-                return true;
-            } else {
-                return false;
-            }
-        }
+
     })
+    function checkPwd() {
+        if (flag==true){
+            return true;
+        } else {
+            return false;
+        }
+    }
 </script>
 
 </body>

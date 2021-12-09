@@ -10,6 +10,14 @@
     </select>
 
     <select id="getAllIpShoppingCartContent" resultType="userCart">
-        select goods.*,ipshoppingcart.goods_num from goods,ipshoppingcart where goods.goods_id=#{goodsId} and ipshoppingcart.ip=#{ip}
+        select goods.*,ipshoppingcart.goods_num from goods,ipshoppingcart
+        where goods.goods_id=#{goodsId} and goods.`goods_id`=ipshoppingcart.`goods_id` and ipshoppingcart.ip=#{ip}
     </select>
+
+    <update id="updateLessIpShoppingCartGoodsNum">
+        update ipshoppingcart set goods_num=goods_num-1 where goods_id=#{goodsId} and ip=#{ip}
+    </update>
+    <update id="updateAddIpShoppingCartGoodsNum">
+        update ipshoppingcart set goods_num=goods_num+1 where goods_id=#{goodsId} and ip=#{ip}
+    </update>
 </mapper>

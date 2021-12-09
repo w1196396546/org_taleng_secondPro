@@ -7,13 +7,14 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="../res/static/css/main.css">
   <link rel="stylesheet" type="text/css" href="../res/layui/css/layui.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery.my-modal.1.1.winStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/lobibox.min.css"/>
   <script type="text/javascript" src="../res/layui/layui.js"></script>
   <script src="js/vue-2.4.0.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/lobibox.min.js"></script>
   <script src="js/jquery.cookie.js"></script>
   <script src="js/axios.min.js"></script>
-  <script src="js/jquery.my-modal.1.1.min.js"></script>
+<%--  <script src="js/jquery.my-modal.1.1.min.js"></script>--%>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 </head>
@@ -95,7 +96,9 @@
         <div class="th th-chk">
           <div class="select-all">
             <div class="cart-checkbox">
+<%--              class="check-all check" id="allCheckked"--%>
               <input class="check-all check" id="allCheckked" type="checkbox" value="true">
+
             </div>
           <label>&nbsp;&nbsp;全选</label>
           </div>
@@ -128,6 +131,7 @@
       </div>
       <div class="OrderList" id="app">
         <div class="order-content" id="list-cont">
+
           <c:set var="money" value="0"/>
 
           <c:forEach items="${goodsInfoList}" var="goodsInfo">
@@ -135,7 +139,8 @@
               <li class="th th-chk">
                 <div class="select-all">
                   <div class="cart-checkbox">
-                    <input class="CheckBoxShop check" id="" type="checkbox" num="all" name="select-all" value="true">
+<%--                    class="CheckBoxShop check" id=""--%>
+                    <input class="CheckBoxShop" id="checkOne" type="checkbox" num="all" name="select-all" value="true">
                   </div>
                 </div>
               </li>
@@ -154,25 +159,21 @@
               <li class="th th-amount">
                 <div class="box-btn layui-clear">
                   <c:if test="${sessionScope.user!=null}">
-                    <a id="lessa" href="javascript:void(0)"><div class="layui-btn" id="lessDiv">-</div></a>
-<%--                    <a class="layui-btn" href="user?method=lessGoodsNum&goodsId=${goodsInfo.goods_id}" id="lessa">-</a>--%>
+                    <div  class="layui-btn" id="lessDiv"><a id="lessa1" href="user?method=operationGoodsNum&type=l&goodsId=${goodsInfo.goods_id}" >-</a></div>
+                  </c:if>
+                  <c:if test="${sessionScope.user==null}">
+                    <div  class="layui-btn" id="lessDiv"><a id="lessa1" href="operation?method=operationIpGoodsNum&type=l&goodsId=${goodsInfo.goods_id}" >-</a></div>
 
-                    <script>
-                    $(function () {
-                      $("#lessa").click(function () {
-                        var num=$(".Quantity-input").val();
-                        if (num<=1){
-                          alert("123121")
-                          return;
-                        }else {
-                          $(this).attr("href","user?method=lessGoodsNum&goodsId=${goodsInfo.goods_id}");
-                        }
-                      });
-                    })
-                  </script>
                   </c:if>
                   <input class="Quantity-input" type="" name="" value="${goodsInfo.goods_num}" disabled="disabled">
-                  <div class="layui-btn">+</div>
+                  <c:if test="${sessionScope.user!=null}">
+                  <div class="layui-btn addadv"><a href="user?method=operationGoodsNum&goodsId=${goodsInfo.goods_id}&type=a" id="adda1">+</a></div>
+
+                  </c:if>
+                  <c:if test="${sessionScope.user==null}">
+                    <div class="layui-btn addadv"><a href="operation?method=operationIpGoodsNum&goodsId=${goodsInfo.goods_id}&type=a" id="adda1">+</a></div>
+
+                  </c:if>
                 </div>
               </li>
               <li class="th th-sum">
@@ -184,6 +185,22 @@
             </ul>
             <c:set var="money" value="${money+goodsInfo.goods_price*goodsInfo.goods_num}"/>
           </c:forEach>
+          <script>
+            $("#lessa1").click(function () {
+              var num=$(".Quantity-input").val();
+              if (num<=1){
+                layer.msg("商品数量不能少于1",{icon:2});
+                return false;
+              }
+            })
+            $("#adda1").click(function () {
+              var num=$(".Quantity-input").val();
+              if (num>=10){
+                layer.msg("商品数量不能操作10",{icon:2});
+                return false;
+              }
+            })
+          </script>
 <%--            <ul class="item-content layui-clear" v-for="(item,index) in list" :key="index">--%>
 <%--              <li class="th th-chk">--%>
 <%--                <div class="select-all">--%>
@@ -219,6 +236,64 @@
 <%--              </li>--%>
 <%--            </ul>--%>
         </div>
+<%--        <script>--%>
+<%--          var sum=0;--%>
+<%--          $(function () {--%>
+<%--            var uls=$(".order-content").children("ul");--%>
+<%--            $.each(uls,function (index,k) {--%>
+<%--              // var price=k.children("li");--%>
+<%--              var lis=$(k).children("li");--%>
+<%--              var price=$(lis[4]).children("span").html();--%>
+<%--              var count=$(lis[3]).children("div").children("input").val();--%>
+<%--              sum=sum+price*count;--%>
+<%--            })--%>
+<%--            $("#myspan").html(sum);--%>
+<%--          });--%>
+<%--          $(".Quantity-input").change(function () {--%>
+<%--            sum=0;--%>
+<%--            var uls=$(".order-content").children("ul");--%>
+<%--            $.each(uls,function (index,k) {--%>
+<%--              // var price=k.children("li");--%>
+<%--              var lis = $(k).children("li");--%>
+<%--              var price = $(lis[4]).children("span").html();--%>
+<%--              var count = $(lis[3]).children("div").children("input").val();--%>
+<%--              sum = sum + price * count;--%>
+<%--            });--%>
+<%--          });--%>
+<%--          $("#checkAll").change(function () {--%>
+<%--            var che=$(this).prop("checked");--%>
+<%--            var inpus=$("#checkOne");--%>
+<%--            if (che==false){--%>
+<%--              for (var i=0;i<inpus.length;i++){--%>
+<%--                inpus[i].checked=false;--%>
+<%--              }--%>
+<%--            }else {--%>
+<%--              $.each(inpus,function (index,k) {--%>
+<%--                $(k).prop("checked","true");--%>
+<%--                // alert("改完了")--%>
+<%--              });--%>
+<%--            }--%>
+<%--          });--%>
+<%--          $("#checkOne").change(function () {--%>
+<%--            alert(1)--%>
+<%--            var flag=$(this).prop("checked");--%>
+<%--            alert(flag)--%>
+<%--            if (flag==false){--%>
+<%--              alert(flag)--%>
+<%--              var uls=$(".order-content").children("ul");--%>
+<%--              $.each(uls,function (index,k) {--%>
+<%--                // var price=k.children("li");--%>
+<%--                var lis=$(k).children("li");--%>
+<%--                var price=$(lis[4]).children("span").html();--%>
+<%--                var count=$(lis[3]).children("div").children("input").val();--%>
+<%--                sum=sum-price*count;--%>
+<%--                alert(sum)--%>
+<%--              })--%>
+<%--              $("#myspan").html(sum);--%>
+<%--            }--%>
+
+<%--          });--%>
+<%--        </script>--%>
       </div>
 
       <!-- 模版导入数据 -->
@@ -266,7 +341,7 @@
         <div class="th th-chk">
           <div class="select-all">
             <div class="cart-checkbox">
-              <input class="check-all check" id="" name="select-all" type="checkbox"  value="true">
+              <input class="check-all check"  name="select-all" type="checkbox"  value="true">
             </div>
             <label>&nbsp;&nbsp;已选<span class="Selected-pieces">0</span>件</label>
           </div>
@@ -275,10 +350,16 @@
           <span class="batch-dele-btn">批量删除</span>
         </div>
         <div class="th Settlement">
-          <button class="layui-btn">结算</button>
+          <c:if test="${sessionScope.user==null}">
+            <button class="layui-btn jiesuan1">结算</button>
+          </c:if>
+          <c:if test="${sessionScope.user!=null}">
+            <button class="layui-btn jiesuan2">结算</button>
+          </c:if>
         </div>
         <div class="th total">
-          <p>应付：<span class="pieces-total">0</span></p>
+<%--          class="pieces-total"--%>
+          <p>应付：<span id="myspan" class="pieces-total">0</span></p>
         </div>
       </div>
     </div>
@@ -388,5 +469,52 @@
 
 });
 </script>
+<%--<script>--%>
+<%--  $(function (){--%>
+<%--    $(".addadv").click(function () {--%>
+<%--      var num=$(".Quantity-input").val();--%>
+<%--      if (num>=5){--%>
+<%--        layer.msg("商品数量不能大于5",{icon:2});--%>
+<%--        return;--%>
+<%--      }else {--%>
+<%--        $("#adda1").attr("href","user?method=operationGoodsNum&goodsId=${goodsInfo.goods_id}&type=a");--%>
+<%--      }--%>
+<%--    });--%>
+<%--  });--%>
+<%--</script>--%>
+
+<%--<script>--%>
+<%--  $(function (){--%>
+<%--    $(".addadv").click(function () {--%>
+<%--      var num=$(".Quantity-input").val();--%>
+<%--      if (num>=5){--%>
+<%--        layer.msg("商品数量不能大于5",{icon:2});--%>
+<%--        return;--%>
+<%--      }else {--%>
+<%--        $("#adda2").attr("href","operation?method=operationIpGoodsNum&goodsId=${goodsInfo.goods_id}&type=a");--%>
+<%--      }--%>
+<%--    });--%>
+<%--  });--%>
+<%--</script>--%>
+
+
+<%--<button class="layui-btn jiesuan1">结算</button>--%>
+<%--<script>--%>
+<%--  $(".jiesuan").click(function (){--%>
+<%--    layer.msg("请登录后在操作!",{icon:2});--%>
+<%--  });--%>
+<%--</script>--%>
+
+<%--<script>--%>
+<%--  $(".jiesuan2").click(function () {--%>
+<%--    $.ajax({--%>
+<%--      url:"pay",--%>
+<%--      type:"post",--%>
+<%--      data:{--%>
+<%--        sum:$()--%>
+<%--      }--%>
+<%--    });--%>
+<%--  });--%>
+<%--</script>--%>
 </body>
 </html>

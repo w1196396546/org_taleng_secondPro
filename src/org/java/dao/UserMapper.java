@@ -27,5 +27,9 @@ public interface UserMapper {
     //用户登录成功之后，加载购物车物品的总数
     int getUserShoppingCartCount(@Param("email")String email);
     //用户点击购物车之后，根据商品id，找出所有的商品信息
-    List<UserCart> getAllUserShoppingCartContent(@Param("goodsId") String goodsId, @Param("userEmail")String userEmail);
+    UserCart getAllUserShoppingCartContent(@Param("goodsId") String goodsId, @Param("userEmail")String userEmail);
+    //用户购物车数量减少的操作
+    void updateLessUserGoodsCart(@Param("email")String email,@Param("goodId")String goodId);
+    //用户购物车数量增加的操作
+    void updateAddUserGoodsCart(@Param("email")String email,@Param("goodId")String goodId);
 }

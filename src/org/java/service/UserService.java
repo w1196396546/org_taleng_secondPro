@@ -30,5 +30,10 @@ public interface UserService {
     //全部执行完成，删除ip购物车表的数据
     void delIpShoppingCartByIp(String ip);
     //点击购物车时，找出所有的购物信息
-    List<UserCart> getAllUserShoppingCartContent(String goodId, String email);
+    UserCart getAllUserShoppingCartContent(String goodId, String email);
+    //用户购物车数量减少的操作
+    void updateLessUserGoodsCart(String email,String goodId);
+    //用户购物车数量减少的操作
+    void updateAddUserGoodsCart(String email,String goodId);
+
 }

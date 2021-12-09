@@ -36,6 +36,12 @@ public class UserFilter implements Filter {
                 response.sendRedirect("index.jsp");
             }
         }
+        int backPwd = uri.indexOf("backPwd.jsp");
+        if (backPwd>-1){
+            if (user!=null){
+                response.sendRedirect("../index.jsp");
+            }
+        }
 
         chain.doFilter(req, resp);
     }

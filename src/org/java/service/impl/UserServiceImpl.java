@@ -79,8 +79,18 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UserCart> getAllUserShoppingCartContent(String goodId,String email) {
-        List<UserCart> list = userMapper.getAllUserShoppingCartContent(goodId,email);
+    public UserCart getAllUserShoppingCartContent(String goodId,String email) {
+        UserCart list = userMapper.getAllUserShoppingCartContent(goodId,email);
         return list;
+    }
+
+    @Override
+    public void updateLessUserGoodsCart(String email, String goodId) {
+        userMapper.updateLessUserGoodsCart(email,goodId);
+    }
+
+    @Override
+    public void updateAddUserGoodsCart(String email, String goodId) {
+        userMapper.updateAddUserGoodsCart(email,goodId);
     }
 }

@@ -51,6 +51,16 @@
     <select id="getAllUserShoppingCartContent" resultType="userCart">
         SELECT goods.*,usershoppingcart.`goods_num` FROM
     goods,usershoppingcart WHERE
-goods.goods_id=#{goodsId} AND user_email=#{userEmail}
+goods.goods_id=#{goodsId} and goods.`goods_id`=usershoppingcart.`goods_id` AND user_email=#{userEmail}
     </select>
+
+    <update id="updateLessUserGoodsCart">
+        update usershoppingcart set goods_num=goods_num-1
+        where goods_id=#{goodId} and user_email=#{email}
+    </update>
+
+    <update id="updateAddUserGoodsCart">
+        update usershoppingcart set goods_num=goods_num+1
+        where goods_id=#{goodId} and user_email=#{email}
+    </update>
 </mapper>
