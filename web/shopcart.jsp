@@ -382,7 +382,10 @@
             <button class="layui-btn jiesuan1">结算</button>
           </c:if>
           <c:if test="${sessionScope.user!=null}">
-            <button class="layui-btn jiesuan2">结算</button>
+            <a href="buy/checkOut.jsp">
+              <button class="layui-btn jiesuan2">结算</button>
+            </a>
+
           </c:if>
         </div>
 
@@ -397,11 +400,11 @@
   $(".jiesuan1").click(function (){
     layer.msg("请登录之后在操作!",{icon:2});
   });
-  $(".jiesuan2").click(function () {
-    //用户已登录，先得到总价格
-    var price=$("#myspan").html();
-    $.ajax
-  });
+  // $(".jiesuan2").click(function () {
+  //   //用户已登录，先得到总价格
+  //   var price=$("#myspan").html();
+  //   location.href="pay?method=aliPay";
+  // });
 </script>
 <script>
     // // alert(1)

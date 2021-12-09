@@ -10,9 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20fc4427-6368-460b-a830-8d4fbf7f0a5f" name="Default Changelist" comment="Default Changelist">
+      <change afterPath="$PROJECT_DIR$/web/buy/addAddress.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/buy/checkOut.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/PayServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/WEB-INF/classes/org/java/web/PayServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/shopcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/shopcart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/org_taleng_secondPro_war_exploded/user/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/PayServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/org_taleng_secondPro/org/java/web/PayServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/java/web/PayServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/java/web/PayServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/shopcart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/shopcart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +34,9 @@
       <list>
         <option value="spring" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
         <option value="mapper" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -568,7 +578,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -589,7 +599,7 @@
       <recent name="org.java.web" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat 服务器.Tomcat 8.5.71">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.71">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.java.demo.Demo" />
       <module name="org_taleng_secondPro" />
@@ -603,15 +613,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -831,12 +839,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Demo" />
       <item itemvalue="JUnit.MD5" />
       <item itemvalue="JUnit.MD5.MD5Email" />
       <item itemvalue="JUnit.Demo.showGoodsInfo" />
-      <item itemvalue="Tomcat 服务器.Tomcat 8.5.71" />
-      <item itemvalue="Tomcat 服务器.tomcat" />
-      <item itemvalue="应用程序.Demo" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.71" />
+      <item itemvalue="Tomcat Server.tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -887,6 +895,8 @@
       <workItem from="1638922287707" duration="5118000" />
       <workItem from="1638927699305" duration="32244000" />
       <workItem from="1639008559137" duration="21214000" />
+      <workItem from="1639041782479" duration="73000" />
+      <workItem from="1639041871435" duration="10193000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Message">
       <created>1638616423338</created>
@@ -1035,7 +1045,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639037425381</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Default Changelist">
+      <created>1639041811549</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1639041811549</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">

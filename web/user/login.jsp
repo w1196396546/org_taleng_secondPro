@@ -76,30 +76,34 @@
               </div>
               <div class="layui-inline veri-code">
                 <div class="layui-input-inline">
-                  <input id="pwd" type="password" name="pwd" lay-verify="required" placeholder="        请输入密码"  class="layui-input">
-
+                  <input id="pwd" type="password" name="pwd" lay-verify="required" placeholder="        请输入密码"  class="layui-input"><br>
                 </div>
               </div>
+
 <%--              <div class="layui-inline veri-code">--%>
 <%--                <div class="layui-input-inline">--%>
 <%--                  <input id="check" type="checkbox" value="yes" checked/>记住密码--%>
 <%--                </div>--%>
 <%--              </div>--%>
               <div style="height: 30px;color: red">${requestScope.error}</div>
+                  <input id="pwd" type="checkbox" name="pwd" style="display:inline-block;position: relative;top: -2.2vw"><span style="position: relative;top: -2.2vw">忘记密码</span>
+
             </div>
-            <div class="layui-form-item login-btn">
+            <div class="layui-form-item login-btn" style="position: relative;top: -2.2vw">
               <div class="layui-input-block">
                 <button class="layui-btn" lay-submit="" lay-filter="demo1">登录</button>
               </div>
+              <div style="position: relative;top: 1.2vw">
+                <a href="../user/backPwd.jsp">忘记密码</a>
+                <a href="register.jsp" style="margin-left: 180px;">用户注册</a>
+              </div>
+
             </div>
 
+
+
           </form>
-          <div class="layui-inline veri-code">
-            <div class="layui-input-inline" >
-              <a href="../user/backPwd.jsp">忘记密码</a>
-              <a href="register.jsp" style="margin-left: 180px;">用户注册</a>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
