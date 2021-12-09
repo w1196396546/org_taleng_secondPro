@@ -58,11 +58,10 @@ public class OperationServlet extends BaseServlet {
                 System.out.println(remoteAddr);
         int count = operationService.getIpShoppingCartCount(remoteAddr);
         System.out.println(count);
-        List<UserCart> goodsInfoList =null;
+        List<UserCart> goodsInfoList =new ArrayList<>();;
         if (count>0){
             //代表IP购物车存在数据
             List<IpShoppingCart> list = operationService.getIpShoppingCartByIp(remoteAddr);
-            goodsInfoList=new ArrayList<>();
             for (IpShoppingCart ipShoppingCart : list) {
                 System.out.println(ipShoppingCart.getGoodsId());
                 UserCart userCart = operationService.getAllIpShoppingCartContent(ipShoppingCart.getGoodsId(), remoteAddr);

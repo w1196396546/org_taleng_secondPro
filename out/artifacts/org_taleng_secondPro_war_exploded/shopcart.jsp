@@ -97,7 +97,7 @@
           <div class="select-all">
             <div class="cart-checkbox">
 <%--              class="check-all check" id="allCheckked"--%>
-              <input class="check-all check" id="allCheckked" type="checkbox" value="true">
+              <input id="checkAll" type="checkbox" value="true">
 
             </div>
           <label>&nbsp;&nbsp;全选</label>
@@ -140,7 +140,7 @@
                 <div class="select-all">
                   <div class="cart-checkbox">
 <%--                    class="CheckBoxShop check" id=""--%>
-                    <input class="CheckBoxShop" id="checkOne" type="checkbox" num="all" name="select-all" value="true">
+                    <input id="checkOnee" type="checkbox" num="all" name="select-all" value="true">
                   </div>
                 </div>
               </li>
@@ -236,64 +236,105 @@
 <%--              </li>--%>
 <%--            </ul>--%>
         </div>
-<%--        <script>--%>
-<%--          var sum=0;--%>
-<%--          $(function () {--%>
-<%--            var uls=$(".order-content").children("ul");--%>
-<%--            $.each(uls,function (index,k) {--%>
-<%--              // var price=k.children("li");--%>
-<%--              var lis=$(k).children("li");--%>
-<%--              var price=$(lis[4]).children("span").html();--%>
-<%--              var count=$(lis[3]).children("div").children("input").val();--%>
-<%--              sum=sum+price*count;--%>
-<%--            })--%>
-<%--            $("#myspan").html(sum);--%>
-<%--          });--%>
-<%--          $(".Quantity-input").change(function () {--%>
-<%--            sum=0;--%>
-<%--            var uls=$(".order-content").children("ul");--%>
-<%--            $.each(uls,function (index,k) {--%>
-<%--              // var price=k.children("li");--%>
-<%--              var lis = $(k).children("li");--%>
-<%--              var price = $(lis[4]).children("span").html();--%>
-<%--              var count = $(lis[3]).children("div").children("input").val();--%>
-<%--              sum = sum + price * count;--%>
-<%--            });--%>
-<%--          });--%>
-<%--          $("#checkAll").change(function () {--%>
-<%--            var che=$(this).prop("checked");--%>
-<%--            var inpus=$("#checkOne");--%>
-<%--            if (che==false){--%>
-<%--              for (var i=0;i<inpus.length;i++){--%>
-<%--                inpus[i].checked=false;--%>
-<%--              }--%>
-<%--            }else {--%>
-<%--              $.each(inpus,function (index,k) {--%>
-<%--                $(k).prop("checked","true");--%>
-<%--                // alert("改完了")--%>
-<%--              });--%>
-<%--            }--%>
-<%--          });--%>
-<%--          $("#checkOne").change(function () {--%>
-<%--            alert(1)--%>
-<%--            var flag=$(this).prop("checked");--%>
-<%--            alert(flag)--%>
-<%--            if (flag==false){--%>
-<%--              alert(flag)--%>
-<%--              var uls=$(".order-content").children("ul");--%>
-<%--              $.each(uls,function (index,k) {--%>
-<%--                // var price=k.children("li");--%>
-<%--                var lis=$(k).children("li");--%>
-<%--                var price=$(lis[4]).children("span").html();--%>
-<%--                var count=$(lis[3]).children("div").children("input").val();--%>
-<%--                sum=sum-price*count;--%>
-<%--                alert(sum)--%>
-<%--              })--%>
-<%--              $("#myspan").html(sum);--%>
-<%--            }--%>
+        <script>
+          var sum=0;
+          $(function () {
+            $("#checkAll")[0].checked=true;
+            var uls=$(".order-content").children("ul");
+            var ins=$(uls).children("li").children("div").children("div").children("input");
+            $.each(ins,function (index, k) {
+              k.checked=true;
+            });
+            $.each(uls,function (index,k) {
 
-<%--          });--%>
-<%--        </script>--%>
+              // var price=k.children("li");
+              var lis=$(k).children("li");
+              var price=$(lis[4]).children("span").html();
+              var count=$(lis[3]).children("div").children("input").val();
+              sum=sum+price*count;
+            })
+            $("#myspan").html(sum);
+          });
+          // box-btn
+          $(".box-btn").on("change",".Quantity-input",function () {
+            sum=0;
+            var uls=$(".order-content").children("ul");
+            $.each(uls,function (index,k) {
+              // var price=k.children("li");
+              var lis = $(k).children("li");
+              var price = $(lis[4]).children("span").html();
+              var count = $(lis[3]).children("div").children("input").val();
+              sum = sum + price * count;
+            });
+          });
+          $("#checkAll").change(function () {
+            // alert(123)
+            var che=$(this).prop("checked");
+            var uls=$(".order-content").children("ul");
+            var ins=$(uls).children("li").children("div").children("div").children("input");
+
+            if (che==false){
+              $.each(ins,function (index, k) {
+                k.checked=false;
+                sum=0;
+                $("#myspan").html(sum);
+              });
+            }else {
+              $.each(ins,function (index, k) {
+                k.checked=true;
+                sum=0;
+                var uls=$(".order-content").children("ul");
+                $.each(uls,function (index,k) {
+                  // var price=k.children("li");
+                  var lis = $(k).children("li");
+                  var price = $(lis[4]).children("span").html();
+                  var count = $(lis[3]).children("div").children("input").val();
+                  sum = sum + price * count;
+
+                });
+              });
+            }
+            $("#myspan").html(sum);
+          });
+          // cart-checkbox
+          $(".cart-checkbox").on("change","#checkOnee",function () {
+            alert(1)
+            var flag=$(this).prop("checked");
+            // alert(flag)
+            if (flag==false){
+              var lis=$(this).parent("div").parent("div").parent("li").parent("ul").children("li");
+              var money=0;
+                var price = $(lis[4]).children("span").html();
+                var count = $(lis[3]).children("div").children("input").val();
+                // alert("count="+count)
+                money=price*count;
+                // alert("money="+money)
+                sum=sum-money;
+              // alert(lis.length)
+              // alert(flag)
+              // var uls=$(".order-content").children("ul");
+              // $.each(uls,function (index,k) {
+              //   // var price=k.children("li");
+              //   var lis=$(k).children("li");
+              //   var price=$(lis[4]).children("span").html();
+              //   var count=$(lis[3]).children("div").children("input").val();
+              //   sum=sum-price*count;
+              //   alert(sum)
+              // })
+              // $("#myspan").html(sum);
+            }else {
+              var lis=$(this).parent("div").parent("div").parent("li").parent("ul").children("li");
+              var money=0;
+              var price = $(lis[4]).children("span").html();
+              var count = $(lis[3]).children("div").children("input").val();
+              // alert("count="+count)
+              money=price*count;
+              // alert("money="+money)
+              sum=sum+money;
+            }
+            $("#myspan").html(sum);
+          });
+        </script>
       </div>
 
       <!-- 模版导入数据 -->
@@ -341,7 +382,8 @@
         <div class="th th-chk">
           <div class="select-all">
             <div class="cart-checkbox">
-              <input class="check-all check"  name="select-all" type="checkbox"  value="true">
+<%--              class="check-all check"--%>
+              <input   name="select-all" type="checkbox"  value="true">
             </div>
             <label>&nbsp;&nbsp;已选<span class="Selected-pieces">0</span>件</label>
           </div>

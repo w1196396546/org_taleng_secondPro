@@ -130,7 +130,6 @@ public class UserServlet extends BaseServlet {
             request.getRequestDispatcher("../user/backPwd.jsp").forward(request, response);
         }
     }
-
     /**
      * 修改密码
      * @param request
@@ -154,7 +153,6 @@ public class UserServlet extends BaseServlet {
         response.sendRedirect("user/login.jsp");
 
     }
-
         /**
          * 用户登录
          * @param request
@@ -193,7 +191,6 @@ public class UserServlet extends BaseServlet {
         }
 
     }
-
     /**
      * 登录成功之后需要加载的数据
      * @param request
