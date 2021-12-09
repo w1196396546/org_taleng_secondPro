@@ -177,7 +177,7 @@
                 </div>
               </li>
               <li class="th th-sum">
-                <span class="sum">${goodsInfo.goods_price}</span>
+                <span class="sum">${goodsInfo.goods_price*goodsInfo.goods_num}</span>
               </li>
               <li class="th th-op">
                 <span class="dele-btn">删除</span>
@@ -249,7 +249,7 @@
 
               // var price=k.children("li");
               var lis=$(k).children("li");
-              var price=$(lis[4]).children("span").html();
+              var price=$(lis[2]).children("span").html();
               var count=$(lis[3]).children("div").children("input").val();
               sum=sum+price*count;
             })
@@ -262,7 +262,7 @@
             $.each(uls,function (index,k) {
               // var price=k.children("li");
               var lis = $(k).children("li");
-              var price = $(lis[4]).children("span").html();
+              var price = $(lis[2]).children("span").html();
               var count = $(lis[3]).children("div").children("input").val();
               sum = sum + price * count;
             });
@@ -287,7 +287,7 @@
                 $.each(uls,function (index,k) {
                   // var price=k.children("li");
                   var lis = $(k).children("li");
-                  var price = $(lis[4]).children("span").html();
+                  var price = $(lis[2]).children("span").html();
                   var count = $(lis[3]).children("div").children("input").val();
                   sum = sum + price * count;
 
@@ -302,28 +302,16 @@
             if (flag==false){
               var lis=$(this).parent("div").parent("div").parent("li").parent("ul").children("li");
               var money=0;
-                var price = $(lis[4]).children("span").html();
+                var price = $(lis[2]).children("span").html();
                 var count = $(lis[3]).children("div").children("input").val();
                 // alert("count="+count)
                 money=price*count;
                 // alert("money="+money)
                 sum=sum-money;
-              // alert(lis.length)
-              // alert(flag)
-              // var uls=$(".order-content").children("ul");
-              // $.each(uls,function (index,k) {
-              //   // var price=k.children("li");
-              //   var lis=$(k).children("li");
-              //   var price=$(lis[4]).children("span").html();
-              //   var count=$(lis[3]).children("div").children("input").val();
-              //   sum=sum-price*count;
-              //   alert(sum)
-              // })
-              // $("#myspan").html(sum);
             }else {
               var lis=$(this).parent("div").parent("div").parent("li").parent("ul").children("li");
               var money=0;
-              var price = $(lis[4]).children("span").html();
+              var price = $(lis[2]).children("span").html();
               var count = $(lis[3]).children("div").children("input").val();
               // alert("count="+count)
               money=price*count;
@@ -397,6 +385,7 @@
             <button class="layui-btn jiesuan2">结算</button>
           </c:if>
         </div>
+
         <div class="th total">
 <%--          class="pieces-total"--%>
           <p>应付：<span id="myspan" class="pieces-total">0</span></p>
@@ -404,7 +393,16 @@
       </div>
     </div>
   </div>
-
+<script>
+  $(".jiesuan1").click(function (){
+    layer.msg("请登录之后在操作!",{icon:2});
+  });
+  $(".jiesuan2").click(function () {
+    //用户已登录，先得到总价格
+    var price=$("#myspan").html();
+    $.ajax
+  });
+</script>
 <script>
     // // alert(1)
     // var name=$.cookie("user");
