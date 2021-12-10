@@ -1,9 +1,7 @@
 package org.java.dao.impl;
 
 import org.java.dao.OperationMapper;
-import org.java.entity.GoodsInfo;
-import org.java.entity.IpShoppingCart;
-import org.java.entity.UserCart;
+import org.java.entity.*;
 import org.java.util.JdbcUtil;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -44,5 +42,20 @@ public class OperationMapperImpl implements OperationMapper {
     @Override
     public void updateAddIpShoppingCartGoodsNum(String goodsId, String ip) {
 
+    }
+
+    @Override
+    public List<Province> getProvince() {
+        return null;
+    }
+
+    @Override
+    public List<City> getCity(Integer pid) {
+        return null;
+    }
+
+    @Override
+    public List<Areas> getArea(Integer cid) {
+        return null;
     }
 }

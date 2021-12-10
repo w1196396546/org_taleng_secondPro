@@ -32,4 +32,8 @@ public interface UserMapper {
     void updateLessUserGoodsCart(@Param("email")String email,@Param("goodId")String goodId);
     //用户购物车数量增加的操作
     void updateAddUserGoodsCart(@Param("email")String email,@Param("goodId")String goodId);
+    //用户添加收货地址
+    void addAddress(@Param("name") String name,@Param("address") String address,@Param("email") String email,@Param("tel") String tel,@Param("code") String code,@Param("provinceId")Integer provinceId,@Param("cityId")Integer cityId,@Param("areaId")Integer areaId);
+    //得到收货地址
+    List<Address> getAddress(@Param("email")String email);
 }

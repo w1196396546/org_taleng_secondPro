@@ -173,6 +173,12 @@ public class UserServlet extends BaseServlet {
         if (count>0){
             System.out.println("可以登录");
             UserInfo user = userService.getUser(md5Email, md5Pwd);
+            String remeberUser = request.getParameter("remeberUser");
+            if (remeberUser!=null){
+                Cookie cookie=new Cookie("remeberUser",user.toString());
+                cookie.setMaxAge(60*60);
+                response.addCookie(cookie);
+            }
             System.out.println(user.getUserPwd());
             System.out.println(user.getUserEmail());
             request.getSession().setAttribute("user",user);
@@ -328,6 +334,15 @@ public class UserServlet extends BaseServlet {
 //                out.flush();
 //                out.close();
     }
+
+    /**
+     * 调用购物车的复用代码
+     * @param request
+     * @param response
+     * @param email
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void showCart(HttpServletRequest request,HttpServletResponse response,String email)throws ServletException, IOException {
             request.getSession().removeAttribute("goodsInfoList");
             List<UserCart> goodsInfoList=new ArrayList<>();
@@ -343,6 +358,14 @@ public class UserServlet extends BaseServlet {
             goodsInfoList.forEach(k-> System.out.println("k的值 "+k.getGoods_intro()));
             response.sendRedirect("shopcart.jsp");
     }
+
+    /**
+     * 操作购物车数量的方法
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void operationGoodsNum(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
         System.out.println("abc");
         String goodsId = request.getParameter("goodsId");
@@ -358,5 +381,54 @@ public class UserServlet extends BaseServlet {
         }
         showCart(request,response, user.getUserEmail());
 
+    }
+
+    /**
+     * 添加用户收货地址的方法
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void addAddress(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
+        String name = request.getParameter("name");
+        Integer province= Integer.valueOf(request.getParameter("province"));
+        Integer city= Integer.valueOf(request.getParameter("city"));
+        Integer area= Integer.valueOf(request.getParameter("area"));
+        System.out.println(province+"  "+city+"  "+area);
+        //获得省份城市信息
+        String provinceMsg=request.getParameter("provinceMsg");
+        String cityMsg=request.getParameter("cityMsg");
+        String areaMsg=request.getParameter("areaMsg");
+
+        System.out.println("provinceMsg+cityMsg+areaMsg.........."+provinceMsg+cityMsg+areaMsg);
+        String tel = request.getParameter("tel");
+        String addr = request.getParameter("addr");
+        String youbian = request.getParameter("youbian");
+        //拼接成实际地址
+        String msg=provinceMsg+" "+cityMsg+" "+areaMsg+" "+addr;
+        //得到用户名
+        UserInfo user= (UserInfo) request.getSession().getAttribute("user");
+        String userEmail = user.getUserEmail();
+        userService.addAddress(name,msg,userEmail,tel,youbian,province,city,area);
+
+    }
+
+    /**
+     * 得到用户收货地址的方法
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void getAddress(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
+        UserInfo user = (UserInfo) request.getSession().getAttribute("user");
+        String userEmail = user.getUserEmail();
+        List<Address> list = userService.getAddress(userEmail);
+        String json = JSON.toJSONString(list);
+        PrintWriter out = response.getWriter();
+        out.write(json);
+        out.flush();
+        out.close();
     }
 }

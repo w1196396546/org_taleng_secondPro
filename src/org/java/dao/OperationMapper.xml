@@ -20,4 +20,17 @@
     <update id="updateAddIpShoppingCartGoodsNum">
         update ipshoppingcart set goods_num=goods_num+1 where goods_id=#{goodsId} and ip=#{ip}
     </update>
+
+    <select id="getProvince" resultType="province">
+        select * from porvince
+    </select>
+
+    <select id="getCity" resultType="city">
+        select * from city where pid=#{pid}
+    </select>
+
+
+    <select id="getArea" resultType="areas">
+        select * from areas where cid=#{cid}
+    </select>
 </mapper>

@@ -1,9 +1,7 @@
 package org.java.dao;
 
 import org.apache.ibatis.annotations.Param;
-import org.java.entity.GoodsInfo;
-import org.java.entity.IpShoppingCart;
-import org.java.entity.UserCart;
+import org.java.entity.*;
 
 import java.util.List;
 
@@ -24,4 +22,12 @@ public interface OperationMapper {
 
     //IP购物车的购物车数量增加
     void updateAddIpShoppingCartGoodsNum(@Param("goodsId") String goodsId,@Param("ip")String ip);
+
+    //初始化加载省份信息
+    List<Province> getProvince();
+    //得到城市信息
+    List<City> getCity(@Param("pid")Integer pid);
+    //得到区域信息
+    List<Areas> getArea(@Param("cid")Integer cid);
+
 }

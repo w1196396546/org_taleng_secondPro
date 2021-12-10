@@ -35,5 +35,8 @@ public interface UserService {
     void updateLessUserGoodsCart(String email,String goodId);
     //用户购物车数量减少的操作
     void updateAddUserGoodsCart(String email,String goodId);
+    void addAddress( String name, String address, String email, String tel,String code,Integer provinceId,Integer cityId,Integer areaId);
+
+    List<Address> getAddress(String email);
 
 }

@@ -63,4 +63,12 @@ goods.goods_id=#{goodsId} and goods.`goods_id`=usershoppingcart.`goods_id` AND u
         update usershoppingcart set goods_num=goods_num+1
         where goods_id=#{goodId} and user_email=#{email}
     </update>
+
+    <insert id="addAddress">
+        insert into address values(uuid(),#{name},#{address},#{email},#{tel},#{code},#{provinceId},#{cityId},#{areaId})
+    </insert>
+
+    <select id="getAddress" resultType="address">
+        select * from address where user_email=#{email}
+    </select>
 </mapper>

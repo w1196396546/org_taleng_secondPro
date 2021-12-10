@@ -93,4 +93,18 @@ public class UserServiceImpl implements UserService {
     public void updateAddUserGoodsCart(String email, String goodId) {
         userMapper.updateAddUserGoodsCart(email,goodId);
     }
+
+
+
+    @Override
+    public List<Address> getAddress(String email) {
+        List<Address> address = userMapper.getAddress(email);
+
+        return address;
+    }
+
+    @Override
+    public void addAddress(String name, String address, String email, String tel, String code, Integer provinceId, Integer cityId, Integer areaId) {
+        userMapper.addAddress(name, address, email, tel, code, provinceId, cityId, areaId);
+    }
 }

@@ -1,9 +1,7 @@
 package org.java.service.impl;
 
 import org.java.dao.OperationMapper;
-import org.java.entity.GoodsInfo;
-import org.java.entity.IpShoppingCart;
-import org.java.entity.UserCart;
+import org.java.entity.*;
 import org.java.service.OperationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,4 +39,24 @@ public class OperationServiceImpl implements OperationService {
     public void updateAddIpShoppingCartGoodsNum(String goodsId, String ip) {
         operationMapper.updateAddIpShoppingCartGoodsNum(goodsId, ip);
     }
+
+    @Override
+    public List<Province> getProvince() {
+        List<Province> list = operationMapper.getProvince();
+        return list;
+    }
+
+    @Override
+    public List<City> getCity(Integer pid) {
+        List<City> city = operationMapper.getCity(pid);
+        return city;
+    }
+
+    @Override
+    public List<Areas> getArea(Integer cid) {
+        List<Areas> area = operationMapper.getArea(cid);
+        return area;
+    }
+
+
 }

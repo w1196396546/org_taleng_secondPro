@@ -85,7 +85,7 @@
 <%--                  <input id="check" type="checkbox" value="yes" checked/>记住密码--%>
 <%--                </div>--%>
 <%--              </div>--%>
-              <div style="height: 30px;color: red">${requestScope.error}</div>
+              <div style="height: 30px;color: red;position: relative;top: 20px;">${requestScope.error}</div>
                   <input id="pwd" type="checkbox" name="pwd" style="display:inline-block;position: relative;top: -2.2vw"><span style="position: relative;top: -2.2vw">忘记密码</span>
 
             </div>

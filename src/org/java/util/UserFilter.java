@@ -42,6 +42,12 @@ public class UserFilter implements Filter {
                 response.sendRedirect("../index.jsp");
             }
         }
+        int checkOut = uri.indexOf("checkOut");
+        if (checkOut>-1){
+            if (user==null){
+                response.sendRedirect("../index.jsp");
+            }
+        }
 
         chain.doFilter(req, resp);
     }

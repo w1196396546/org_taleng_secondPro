@@ -17,14 +17,14 @@
     <div class="layui-form-item">
         <label class="layui-form-label">姓名</label>
         <div class="layui-input-inline">
-            <input type="text" name="name" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+            <input type="text" id="name" name="name" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
         </div>
     </div>
 
     <div class="layui-form-item">
         <label class="layui-form-label">选择省份:</label>
         <div class="layui-input-inline">
-            <select name="province">
+            <select name="province" id="mypro" lay-filter="province">
                 <option value="-1">请选择省份:</option>
             </select>
         </div>
@@ -32,7 +32,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">选择城市:</label>
         <div class="layui-input-inline">
-            <select name="city">
+            <select name="city" id="city" lay-filter="city">
                 <option value="-1">请选择城市:</option>
             </select>
         </div>
@@ -40,7 +40,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">选择区域:</label>
         <div class="layui-input-inline">
-            <select name="area">
+            <select name="area" id="area">
                 <option value="-1">请选择区域:</option>
             </select>
         </div>
@@ -48,20 +48,20 @@
     <div class="layui-form-item">
         <label class="layui-form-label">详细地址:</label>
         <div class="layui-input-inline">
-           <textarea rows="5" cols="24" required></textarea>
+           <textarea rows="5" cols="24" required name="addr" id="addr"></textarea>
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">电话</label>
         <div class="layui-input-inline">
-            <input type="text" name="tel" required  lay-verify="required" placeholder="请输入联系方式" autocomplete="off" class="layui-input">
+            <input type="text" id="tel" name="tel" required  lay-verify="required" placeholder="请输入联系方式" autocomplete="off" class="layui-input">
 
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">邮编</label>
         <div class="layui-input-inline">
-            <input type="number" name="score" required  placeholder="请输入邮政编号" autocomplete="off" class="layui-input">
+            <input type="number" id="youbian" name="youbian" required  placeholder="请输入邮政编号" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
@@ -78,12 +78,97 @@
         var form = layui.form;
         var $ = layui.$;
         var layer = layui.layer;
-
+        // alert(1)
+            var msg="";
+            $.ajax({
+                url:"../operation",
+                type: "post",
+                data: {"method":"getProvince"},
+                dataType:"json",
+                success:function (data) {
+                    $.each(data,function (index,k) {
+                        console.log(form)
+                       $("#mypro").append($("<option value='"+k.pid+"'>"+k.pname+"</option>"));
+                    });
+                    form.render("select");
+                }
+            });
+            form.on('select(province)',function (data) {
+                    var pid=data.value;
+                    $("#city")[0].options.length=1;
+                    $.ajax({
+                        url:"../operation",
+                        type:"post",
+                        data:{"method":"getCity","pid":pid},
+                        dataType: "json",
+                        success:function (data) {
+                            $.each(data,function (index,k) {
+                               $("#city").append($("<option value='"+k.cid+"'>"+k.cname+"</option>")) ;
+                            });
+                            form.render("select");
+                        }
+                    });
+            });
+            form.on('select(city)',function (data){
+               var cid=data.value;
+               $("#area")[0].options.length=1;
+               $.ajax({
+                  url:"../operation",
+                  type:"post",
+                   data:{
+                      "method":"getArea",
+                       "cid":cid
+                   },
+                   dataType:"json",
+                   success:function (data) {
+                       $.each(data,function (index,k) {
+                          $("#area").append($("<option value='"+k.aid+"'>"+k.aname+"</option>"))
+                       });
+                       form.render("select");
+                   }
+               });
+            });
         //监听提交
         form.on('submit(formDemo)', function(data){
+            // alert(112323)
+            var provinceSelect=$("#mypro").children("option");
+            var provinceMsg="";
+            $.each(provinceSelect,function (index, k) {
+               var check=$(k).prop("selected")
+                if (check==true){
+                    provinceMsg=$(k).html();
+                }
+            });
+            var citySelect =$("#city").children("option");
+            var cityMsg="";
+            $.each(citySelect,function (index,k) {
+               var check=$(k).prop("selected");
+               if (check==true){
+                   cityMsg=$(k).html();
+               }
+            });
+            var areaSelect =$("#area").children("option");
+            var areaMsg="";
+            $.each(areaSelect,function (index,k) {
+                var check=$(k).prop("selected");
+                if (check==true){
+                    areaMsg=$(k).html();
+                }
+            });
+            // alert(provinceMsg+" "+cityMsg+" "+areaMsg)
+            var name=$("#name").val();
+            var pro=$("#mypro").val();
+            var city=$("#city").val();
+            var area=$("#area").val();
+            var addr=$("#addr").val();
+            // alert(addr)
+            var tel=$("#tel").val();
+            var youbian=$("#youbian").val();
+            // alert(youbian)
+            // parent.show(name,pro,city,area,addr,tel,youbian,provinceMsg,cityMsg,areaMsg);
 
             $.ajax({
-                url:"ajax?method=add",
+                url:"../user?method=addAddress&provinceMsg="+provinceMsg+"&cityMsg="+cityMsg+"&areaMsg="+areaMsg,
                 type:"post",
                 data: $("#frm").serialize(),
                 success:function () {
@@ -94,6 +179,7 @@
                     //3、刷新主页面表格中的数据
                     //只要当前窗体的父窗体刷新，弹出层会自动关闭，并且父窗体的数据会自动刷新
                     setTimeout(function () {
+                        parent.show(name,pro,city,area,addr,tel,youbian,provinceMsg,cityMsg,areaMsg);
                         window.parent.location.reload();
                     },2000);
 

@@ -3,9 +3,7 @@ package org.java.web;
 import com.alibaba.fastjson.JSON;
 import org.java.dao.OperationMapper;
 import org.java.dao.impl.OperationMapperImpl;
-import org.java.entity.GoodsInfo;
-import org.java.entity.IpShoppingCart;
-import org.java.entity.UserCart;
+import org.java.entity.*;
 import org.java.service.OperationService;
 import org.java.service.UserService;
 import org.springframework.context.ApplicationContext;
@@ -113,5 +111,46 @@ public class OperationServlet extends BaseServlet {
             shoppingIpCart(request,response,ip);
             response.sendRedirect("shopcart.jsp");
     }
+
+    /**
+     * 初始化加载得到省份信息
+     * @param request
+     * @param response
+     *
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void getProvince(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("getProvince,method");
+        List<Province> list = operationService.getProvince();
+        //将集合转换成json字符串
+        String json = JSON.toJSONString(list);
+        //得到输出流
+        PrintWriter out = response.getWriter();
+        out.write(json);
+        out.flush();
+        out.close();
+    }
+    protected void getCity(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("getCity  method");
+        Integer pid= Integer.valueOf(request.getParameter("pid"));
+        System.out.println(pid);
+        List<City> list = operationService.getCity(pid);
+        PrintWriter out = response.getWriter();
+        String json = JSON.toJSONString(list);
+        out.write(json);
+        out.flush();
+        out.close();
+    }
+    protected void getArea(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Integer cid=Integer.parseInt(request.getParameter("cid"));
+        List<Areas> area = operationService.getArea(cid);
+        String json = JSON.toJSONString(area);
+        PrintWriter out = response.getWriter();
+        out.write(json);
+        out.flush();
+        out.close();
+    }
+
 
     }

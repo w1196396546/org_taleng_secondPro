@@ -1,9 +1,7 @@
 package org.java.service;
 
 import org.apache.ibatis.annotations.Param;
-import org.java.entity.GoodsInfo;
-import org.java.entity.IpShoppingCart;
-import org.java.entity.UserCart;
+import org.java.entity.*;
 
 import java.util.List;
 
@@ -21,4 +19,10 @@ public interface OperationService {
 
     //IP购物车商品数量加1
     void updateAddIpShoppingCartGoodsNum(String goodsId,String ip);
+
+    List<Province> getProvince();
+
+    List<City> getCity(Integer pid);
+
+    List<Areas> getArea(Integer cid);
 }
