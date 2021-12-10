@@ -61,18 +61,19 @@
                     <div style="position: relative;top: 2.5vw;left: 3vw;">
                         <button class="layui-btn mybtn">点击添加收货地址</button>
                     </div>
-                    <div  id="mydiv" v-for="(item,index) in addrList" :key="item.addr_id" style="position:relative;display: inline-block;position: relative;top: 5.5vw;left:1.5vw;height: 200px;width: 18%;margin-right:12px;background-color: white;">
-                        <div style="line-height: 20px;height: 120px;width: 100px;">
+                    <div class="divAddr" id="mydiv" v-for="(item,index) in addrList" :key="item.addr_id" style="position:relative;display: inline-block;position: relative;top: 5.5vw;left:1.5vw;height: 200px;width: 18%;margin-right:12px;background-color: white;">
+                        <div style="line-height: 20px;height: 120px;width: 100px;margin-left: 10px">
+                            <input type="hidden" name="addr_id" :value="item.addr_id">
                             <input type="hidden" name="province" id="province" :value="item.addr_provinceId">
-                            <input type="hidden" name="area" id="city" :value="item.addr_cityId">
+                            <input type="hidden" name="city" id="city" :value="item.addr_cityId">
                             <input type="hidden" name="area" id="area" :value="item.addr_areaId">
                            姓名: <div id="name">{{item.addr_username}}</div>
                             电话:<div id="tel">{{item.addr_tel}}</div>
                             地址:<div id="addr" style="width: 180px;">{{item.addr_user_address}}</div>
                             邮编:<div id="youbian">{{item.addr_code}}</div>
                         </div>
-                        <div>
-                            <a href="javascript:void(0)" style="margin-left: 11vw;color: orange;position: relative;top: 25px;">修改</a>
+                        <div class="divaaa">
+                            <a class="myAddressA" href="javascript:void(0)" style="margin-left: 11vw;color: orange;position: relative;top: 25px;">修改</a>
                         </div>
 
                     </div>
@@ -139,15 +140,68 @@
             $("#mydiv").after();
         }
     }
-    $("#mydiv").click(function () {
-        alert(1)
-    });
+    $("#app").on('click','#mydiv',function () {
+        var divs=$(".divAddr");
+        var th=$(this);
+        $(th).css("border","1px solid orange")
+        $(divs).not(th).css("border","1px solid black");
+
+    })
 </script>
 <script>
 
     layui.use(['jquery'],function () {
         var $ =layui.$;
+        $("#app").on('click','.divaaa .myAddressA',function () {
+            var $div=$(this).parent("div").prev();
+            var province=$($div).find("[name='province']").val();
+            var city=$($div).find("[name='city']").val();
+            var area=$($div).find("[name='area']").val();
+            var name=$($div).find("#name").html();
+            var tel=$($div).find("#tel").html();
+            var addr=$($div).find("#addr").html();
+            var youbian=$($div).find("#youbian").html();
+            //还要获得地址唯一标号
+            var addrId=$($div).find("[name='addr_id']").val();
+            layer.open({
+                type: 2,//弹出层的类型，2:表示是一个frame
+                shade: 0.2,
+                area: ['500px','450px'],
+                anim:1,//动画效果
+                title:"添加地址",
+                content: 'addAddress.jsp',
+                zIndex: layer.zIndex, //重点1
+                success: function(layero){
+                    layer.setTop(layero); //重点2
+                    //要将父窗口的数据，传递到子窗口弹出层中
+                    //1、获得弹出层（子窗体）的body
+                    var  body = layui.layer.getChildFrame("body");
+                    body.find("[name='name']").val(name);
+                    // body.find("[name='province']").val(province);
+                    // body.find("[name='city']").val(city);
+                    body.find("[name='flag']").val("true");
+                    // body.find("[name='area']").val(area);
+                    body.find("[name='addr']").val(addr);
+                    body.find("[name='tel']").val(tel);
+                    body.find("[name='youbian']").val(youbian);
+                    body.find("[name='addrId']").val(addrId);
+                    // //给body中的控件赋值
+                    // body.find("[name='id']").val(data.id);
+                    // body.find("[name='name']").val(data.name);
+                    // body.find("[name='clazz']").val(data.clazz);
+                    // body.find("[name='score']").val(data.score);
+                    // //如果生日是Date类型，默认取出崃是时间戳，将不能在日期控件中直接回显（要在日期控件中回显，格式必须是:yyyy-MM-dd）
+                    // body.find("[name='bir']").val(layui.util.toDateString(data.bir,'yyyy-MM-dd'));
+                    // //单选按钮
+                    // body.find("[value='"+data.gender+"']").attr("checked",true);
 
+                    //获得弹出层的window
+                    var updateWin = layero.find('iframe')[0].contentWindow;
+                    //渲染弹出层中的表单组件
+                    updateWin.layui.form.render("radio");
+                }
+            });
+        });
         $(".mybtn").click(function () {
 
             layer.open({

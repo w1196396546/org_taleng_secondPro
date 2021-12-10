@@ -71,4 +71,11 @@ goods.goods_id=#{goodsId} and goods.`goods_id`=usershoppingcart.`goods_id` AND u
     <select id="getAddress" resultType="address">
         select * from address where user_email=#{email}
     </select>
+
+    <update id="updateAddress">
+        update address set addr_username=#{name},
+        addr_user_address=#{address},addr_tel=#{tel},addr_code=#{code},
+        addr_provinceId=#{provinceId},addr_cityId=#{cityId},addr_areaId=#{areaId}
+        where addr_id=#{email}
+    </update>
 </mapper>

@@ -86,7 +86,7 @@
 <%--                </div>--%>
 <%--              </div>--%>
               <div style="height: 30px;color: red;position: relative;top: 20px;">${requestScope.error}</div>
-                  <input id="pwd" type="checkbox" name="pwd" style="display:inline-block;position: relative;top: -2.2vw"><span style="position: relative;top: -2.2vw">忘记密码</span>
+                  <input id="pwd" type="checkbox" name="remeberUser" value="yes" style="display:inline-block;position: relative;top: -2.2vw"><span style="position: relative;top: -2.2vw">记住密码密码</span>
 
             </div>
             <div class="layui-form-item login-btn" style="position: relative;top: -2.2vw">

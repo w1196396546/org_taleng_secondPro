@@ -107,4 +107,9 @@ public class UserServiceImpl implements UserService {
     public void addAddress(String name, String address, String email, String tel, String code, Integer provinceId, Integer cityId, Integer areaId) {
         userMapper.addAddress(name, address, email, tel, code, provinceId, cityId, areaId);
     }
+
+    @Override
+    public void updateAddress(String name, String address, String email, String tel, String code, Integer provinceId, Integer cityId, Integer areaId) {
+        userMapper.updateAddress(name, address, email, tel, code, provinceId, cityId, areaId);
+    }
 }

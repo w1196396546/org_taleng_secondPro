@@ -391,6 +391,7 @@ public class UserServlet extends BaseServlet {
      * @throws IOException
      */
     protected void addAddress(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
+
         String name = request.getParameter("name");
         Integer province= Integer.valueOf(request.getParameter("province"));
         Integer city= Integer.valueOf(request.getParameter("city"));
@@ -411,6 +412,38 @@ public class UserServlet extends BaseServlet {
         UserInfo user= (UserInfo) request.getSession().getAttribute("user");
         String userEmail = user.getUserEmail();
         userService.addAddress(name,msg,userEmail,tel,youbian,province,city,area);
+
+    }
+
+    /**
+     * 修改用户地址信息
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void updateAddress(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException {
+        String name = request.getParameter("name");
+        Integer province= Integer.valueOf(request.getParameter("province"));
+        Integer city= Integer.valueOf(request.getParameter("city"));
+        Integer area= Integer.valueOf(request.getParameter("area"));
+        System.out.println(province+"  "+city+"  "+area);
+        //获得省份城市信息
+        String provinceMsg=request.getParameter("provinceMsg");
+        String cityMsg=request.getParameter("cityMsg");
+        String areaMsg=request.getParameter("areaMsg");
+        //这是获取收货地址唯一编号，不能根据用户名去修改，要根据这个唯一标号去修改
+        String addrId = request.getParameter("addrId");
+        System.out.println("provinceMsg+cityMsg+areaMsg.........."+provinceMsg+cityMsg+areaMsg);
+        String tel = request.getParameter("tel");
+        String addr = request.getParameter("addr");
+        String youbian = request.getParameter("youbian");
+        //拼接成实际地址
+        String msg=provinceMsg+" "+cityMsg+" "+areaMsg+" "+addr;
+        //得到用户名
+        UserInfo user= (UserInfo) request.getSession().getAttribute("user");
+        String userEmail = user.getUserEmail();
+        userService.updateAddress(name,msg,addrId,tel,youbian,province,city,area);
 
     }
 
